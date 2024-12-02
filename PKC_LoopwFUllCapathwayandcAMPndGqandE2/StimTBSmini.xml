@@ -1,0 +1,30 @@
+<StimulationSet>
+
+<!--  Ca pulses TRAIN 1:  40 Ca pulses -->
+
+<InjectionStim specieID="Ca" injectionSite="pointA">
+        <onset>               50000          </onset>
+        <duration>            3              </duration>
+        <rate>                760            </rate>
+        <period>              20             </period>
+        <end>                 50066          </end>
+        <numTrains>           10             </numTrains>
+        <interTrainInterval>  29             </interTrainInterval>    
+</InjectionStim>
+
+<InjectionStim specieID="Ca" injectionSite="pointA">
+        <onset>               65000          </onset>
+        <duration>            3              </duration>
+        <rate>                760            </rate>
+        <period>              20             </period>
+        <end>                 65066          </end>
+        <numTrains>           10             </numTrains>
+        <interTrainInterval>  29             </interTrainInterval>    
+</InjectionStim>
+
+
+
+
+</StimulationSet>
+  
+
