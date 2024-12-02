@@ -1,0 +1,70 @@
+<StimulationSet>
+<!--calcium-->
+<!--onset and duration in ms, rate in particles/ms-->
+  
+  
+
+
+
+  <!-- Train 1 -->
+<InjectionStim specieID="GluGbuf" injectionSite="pointA">
+        <onset>               50000          </onset>
+        <duration>            5              </duration>
+        <rate>                100           </rate>
+        <period>              50             </period>
+        <end>                 50999          </end>
+        <numTrains>           20             </numTrains>
+        <interTrainInterval>  9001          </interTrainInterval>   
+</InjectionStim>
+
+
+ 
+<InjectionStim specieID="Ca" injectionSite="pointA">
+        <onset>               50000          </onset>
+        <duration>            3              </duration>
+        <rate>                650            </rate>
+        <period>              50             </period>
+        <end>                 50999          </end>
+        <numTrains>           20             </numTrains>
+        <interTrainInterval>  9001          </interTrainInterval>  
+</InjectionStim>
+
+
+
+
+<InjectionStim specieID="Cbuff" injectionSite="pointA">
+
+        <onset>               51000          </onset>
+        <duration>        10         </duration> 
+      	<rate>       4175 </rate>
+      	<period>        1001             </period>
+	<end>          52000           </end>        
+      	<numTrains>           20             </numTrains>
+        <interTrainInterval>  9001          </interTrainInterval> 		
+   </InjectionStim>
+  <!--cAMP -->
+ <!--fast injection to have sharp increase-->
+<InjectionStim specieID="cAMP" injectionSite="pointA">
+           <onset>               50000          </onset>
+        <duration>        1         </duration> 
+       	<rate>               5000      </rate>
+      	<period>        1100             </period>
+	<end>          51000           </end>	
+        <numTrains>           20             </numTrains>
+        <interTrainInterval>  9001          </interTrainInterval> 
+</InjectionStim>
+
+<!--maintained desire concentration-->
+
+ <InjectionStim specieID="cAMP" injectionSite="pointA">
+        <onset>               50010          </onset>
+        <duration>       1        </duration> 
+       	<rate>              70       </rate>
+	<period>        10             </period>
+	<end>          51000           </end>		
+        <numTrains>           20             </numTrains>
+        <interTrainInterval>  9001          </interTrainInterval> 
+</InjectionStim>
+
+
+</StimulationSet>

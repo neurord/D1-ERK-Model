@@ -1,0 +1,132 @@
+<OutputScheme>
+  <!--
+      Each file will have a set of concentrations in compartments
+      sampled according to a specific dt
+  -->
+
+  <!--
+      Every Output block must have in its definition one (and only)
+      instance of:
+      * filename
+      And might have one (and only) instance of:
+      * region or
+      * dt
+      If "region" is ommited then the concs for the whole system will be
+      saved.
+      If "dt" is ommited than the concs will be written at each time step.
+      So the "io file" will be dependent on information stated in the
+      "morph" (regions) and "model" (dt).
+  -->
+
+
+  <OutputSet filename = "highRes"  dt="100.0">
+    <OutputSpecie name="Ca"/>
+  
+    <OutputSpecie name="ppERKPla2"/>
+    <OutputSpecie name="ppERKPla2ac"/>    
+    <OutputSpecie name="Pla2"/>
+    <OutputSpecie name="Pla2ac"/>
+    <OutputSpecie name="pPla2ac"/>
+    <OutputSpecie name="Pla2Ca"/>
+    <OutputSpecie name="Pla2acAPC"/>
+    <OutputSpecie name="pPla2acAPC"/>
+    
+ 
+    
+    <OutputSpecie name="ERK"/>
+    <OutputSpecie name="ERKpY"/>
+    <OutputSpecie name="ERKpT"/>
+    <OutputSpecie name="ppERK"/>
+    <OutputSpecie name="Pkc"/>
+    <OutputSpecie name="PkcCa"/>
+    <OutputSpecie name="PkcCaDag"/>
+    <OutputSpecie name="PkcCaDagAA"/>    
+    <OutputSpecie name="PkcCaDagRaf1"/>
+    <OutputSpecie name="PkcCaDagAARaf1"/>
+    
+    <OutputSpecie name="APC"/>  
+    <OutputSpecie name="AA"/> 
+    
+     
+   
+    
+    <OutputSpecie name="Raf1"/>
+    <OutputSpecie name="Raf1Ras"/>
+    
+    <OutputSpecie name="pPla2acPP2A"/>  
+    	
+    <OutputSpecie name="pMEKPP2A"/>
+    <OutputSpecie name="ppMEKPP2A"/>
+    <OutputSpecie name="MEK"/>
+    <OutputSpecie name="pMEK"/>
+    <OutputSpecie name="ppMEK"/>
+    <OutputSpecie name="MKP1"/>
+    <OutputSpecie name="pERKMKP1"/>
+    <OutputSpecie name="ppERKMKP1"/>
+    <OutputSpecie name="ppMEKERK"/>
+    <OutputSpecie name="ppMEKpERK"/>
+    
+    <OutputSpecie name="dRaf1Ras"/>
+    <OutputSpecie name="dRaf1RasMEK"/>
+    <OutputSpecie name="dRaf1RaspMEK"/>
+    
+    <OutputSpecie name="pRaf1"/>
+    <OutputSpecie name="pRaf1Ras"/>
+   
+    <OutputSpecie name="dpRaf1Ras"/>
+    <OutputSpecie name="dpRaf1RasMEK"/>
+    <OutputSpecie name="dpRaf1RaspMEK"/>
+    
+    <OutputSpecie name="bRaf"/>
+    <OutputSpecie name="bRafRas"/>
+    <OutputSpecie name="bRafRasMEK"/>
+    <OutputSpecie name="bRafRaspMEK"/>
+    
+     <OutputSpecie name="RasGRF"/>
+    <OutputSpecie name="CamCa4GRF"/>
+    <OutputSpecie name="CamCa4GRFRas"/>
+    
+    <OutputSpecie name="RaspSynGap"/>
+    <OutputSpecie name="RasSynGap"/>
+    
+     <OutputSpecie name="Cam"/>
+    <OutputSpecie name="CamCa2C"/>
+    <OutputSpecie name="CamCa2N"/>
+    
+     <OutputSpecie name="CK"/>
+    <OutputSpecie name="CKp"/>
+    <OutputSpecie name="CamCa4"/>
+    <OutputSpecie name="CKCamCa4"/>
+    <OutputSpecie name="CKpCamCa4"/>
+    
+      <OutputSpecie name="SynGap"/>
+    <OutputSpecie name="pSynGap"/>
+    
+    
+    
+    
+    
+    <OutputSpecie name="STEP"/>
+    <OutputSpecie name="STEPp"/>
+    <OutputSpecie name="ppERKSTEP"/>
+    <OutputSpecie name="pERKSTEP"/>
+    <OutputSpecie name="ppERKSTEPp"/>   
+    
+    <OutputSpecie name="CaOut"/>
+    <OutputSpecie name="CaOutLeak"/>
+    <OutputSpecie name="Leak"/>
+    <OutputSpecie name="pmca"/>
+    <OutputSpecie name="pmcaCa"/>
+    <OutputSpecie name="ncx"/>
+    <OutputSpecie name="ncxCa"/>
+    <OutputSpecie name="Calbin"/>
+    <OutputSpecie name="CalbinC"/>
+    <OutputSpecie name="CB"/>
+    <OutputSpecie name="CaB"/>
+    
+   
+  </OutputSet>  
+    
+    
+ 
+</OutputScheme>

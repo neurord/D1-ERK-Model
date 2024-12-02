@@ -1,0 +1,23 @@
+<InitialConditions>
+
+  <ConcentrationSet>
+        
+    <NanoMolarity specieID="ppERK" 	value="14.527" />
+    <NanoMolarity specieID="Pkc"        value="9750"     />  
+    <NanoMolarity specieID="PkcCa"      value="250"     />  
+    <NanoMolarity specieID="Dag"        value="1000"     />   
+    <NanoMolarity specieID="Pla2"       value="400"     />
+    <NanoMolarity specieID="APC"        value="30000"     />
+  
+
+    <NanoMolarity specieID="AA"         value="6120"     /> 
+      
+    <NanoMolarity specieID="Raf1"       value="160.935"     /> 
+    <NanoMolarity specieID="RasGTP"     value="10.948"     /> 
+    <NanoMolarity specieID="PP2A" 	value="544.803" />  
+    
+    <NanoMolarity specieID="Ca"         value="75"/>
+   
+      
+    </ConcentrationSet>
+</InitialConditions>
