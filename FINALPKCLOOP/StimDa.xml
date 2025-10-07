@@ -1,0 +1,16 @@
+<StimulationSet>
+
+    <!-- the injectionSite must match a regionLabel deefined in the morphology -->
+   <!-- 20 Glu and Ca pulses / sec for 1 sec * 20 trains = 400 pulses -->
+
+<!-- pulse 1 to produce 0.5 uM alone,10xed everything -->
+
+      <InjectionStim specieID="DaDbuf" injectionSite="pointA">
+        <onset>           100000        </onset>
+        <duration>           900000         </duration>
+        <rate>               0.1    </rate>
+     </InjectionStim>
+     
+       
+
+</StimulationSet>
