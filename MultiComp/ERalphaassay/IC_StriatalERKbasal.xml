@@ -1,0 +1,137 @@
+<InitialConditions>
+
+  <!-- ========================= -->
+  <!-- GLOBAL VOLUME SPECIES -->
+  <!-- ========================= -->
+  <ConcentrationSet>
+
+     
+
+    
+                                                                                               
+    <NanoMolarity specieID="Ip3" value="0"/>
+    <NanoMolarity specieID="Ip3degrad" value="0"/>
+    <NanoMolarity specieID="2agDegrad" value="0"/>
+    <NanoMolarity specieID="2ag" value="0"/>        
+    <NanoMolarity specieID="Ca" value="75"/>
+    <NanoMolarity specieID="CaOutLeak" value="100"/>
+     <NanoMolarity specieID="Leak" value="100"/>
+    <NanoMolarity specieID="E2Out" value="200000"/>
+  
+  
+
+        <NanoMolarity specieID="MgluR"           value="0"     />   
+        <NanoMolarity specieID="GluMgluR"        value="0"     />
+        <NanoMolarity specieID="GluMgluRdesens"  value="0"     />
+  
+
+        <NanoMolarity specieID="Gqabg"          value="0"     />
+        <NanoMolarity specieID="GluMgluRGq"     value="0"     />
+	<NanoMolarity specieID="GqaGTP"         value="0"     />
+	<NanoMolarity specieID="GqaGDP"         value="0"     />
+    
+    
+    
+        
+        
+        <!-- membrane molecules -->
+
+        <NanoMolarity specieID="PlcCa"          value="0"     />
+        <NanoMolarity specieID="PlcCaPip2"      value="0"     />
+        <NanoMolarity specieID="PlcGqa"         value="0"     />
+        <NanoMolarity specieID="PlcCaGqa"       value="0"   />
+	<NanoMolarity specieID="PlcCaGqaPip2"   value="0"     />
+  
+        <NanoMolarity specieID="Dag"            value="0"     />
+        <NanoMolarity specieID="DagKdag"        value="0"  />
+        <NanoMolarity specieID="PA"             value="0"  />
+
+        <NanoMolarity specieID="DagCaDgl"       value="0"     /> 
+        <NanoMolarity specieID="CaDgl"          value="0"     /> 
+        <NanoMolarity specieID="Dgl"            value="0"     /> 
+    
+
+    <NanoMolarity specieID="ERa"            value="0"     /> 
+    
+    
+    
+    
+	
+  </ConcentrationSet>
+
+
+  <!-- ========================= -->
+  <!-- SURFACE SPECIES: DEND -->
+  <!-- ========================= -->
+  <SurfaceDensitySet region="dend">
+	
+    <PicoSD specieID="E2"   value="10" />
+  
+    <PicoSD specieID="ERa" value="100" /> 
+     
+  
+    
+    <PicoSD specieID="MgluR" value="30"/>
+    <PicoSD specieID="MgluRGq" value="10"/>
+    <PicoSD specieID="Gqabg" value="1950"/>
+    <PicoSD specieID="Plc" value="1160"/>    <!--Was 177 nadia-->
+    <PicoSD specieID="PlcCa" value="8"/>
+    <PicoSD specieID="Pip2" value="9525"/> <!--9525-->
+    <PicoSD specieID="PlcCaPip2" value="15"/>
+
+    <PicoSD specieID="Dag" value="40"/>
+    <PicoSD specieID="DagK" value="140"/>
+    <PicoSD specieID="DagKdag" value="0"/>
+    <PicoSD specieID="Dgl" value="308"/>
+    <PicoSD specieID="CaDgl" value="72"/>
+    <PicoSD specieID="DagCaDgl" value="40"/>
+    <PicoSD specieID="pDgl" value="0"/>
+    <PicoSD specieID="CapDgl" value="0"/>
+
+    <PicoSD specieID="PIkinase" value="240"/>
+    <PicoSD specieID="Ip3degPIk" value="40"/>
+
+    
+
+  </SurfaceDensitySet>
+
+
+  
+
+
+  <ConcentrationSet region="head">
+  
+    <NanoMolarity specieID="E2"   value="10" />
+    <NanoMolarity specieID="ERa" value="100" /> 
+  
+    
+    <NanoMolarity specieID="MgluR" value="700"/>
+    <NanoMolarity specieID="MgluRGq" value="100"/>
+    <NanoMolarity specieID="Gqabg" value="7900"/>
+    <NanoMolarity specieID="Plc" value="1160"/>
+    <NanoMolarity specieID="PlcCa" value="0"/>
+    <NanoMolarity specieID="Pip2" value="19090"/>  <!--19090-->
+    <NanoMolarity specieID="PlcCaPip2" value="20"/>
+
+    <NanoMolarity specieID="Dag" value="220"/>
+    <NanoMolarity specieID="DagK" value="280"/>
+    <NanoMolarity specieID="Dgl" value="1260"/>
+    <NanoMolarity specieID="CaDgl" value="350"/>
+    <NanoMolarity specieID="DagCaDgl" value="50"/>
+    <NanoMolarity specieID="pDgl" value="20"/>
+    <NanoMolarity specieID="CapDgl" value="0"/>
+
+    <NanoMolarity specieID="PIkinase" value="560"/>
+    <NanoMolarity specieID="Ip3degPIk" value="0"/>
+    <NanoMolarity specieID="Ip3" value="40"/>
+
+
+   
+
+</ConcentrationSet>
+
+
+
+
+</InitialConditions>
+

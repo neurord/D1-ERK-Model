@@ -1,0 +1,25 @@
+    <StimulationSet>
+      <InjectionStim specieID="DaDbuf" injectionSite="sa1[0].pointA">
+        <onset>           50000        </onset>
+        <duration>           10.0      </duration>
+        <rate>               100    </rate>
+      </InjectionStim>
+      <InjectionStim specieID="DaDbuf" injectionSite="dend:submembrane">
+        <onset>           50000        </onset>
+        <duration>           10.0      </duration>
+        <rate>               700    </rate>
+      </InjectionStim>
+<!--With depletion of ACh -->
+
+<InjectionStim specieID="AKAR3" injectionSite="dend:submembrane">
+        <onset>               1000          </onset>
+        <duration>            30      </duration>
+        <rate>                45         </rate>
+</InjectionStim>
+<InjectionStim specieID="AKAR3" injectionSite="sa1[0].pointA">
+        <onset>               1000          </onset>
+        <duration>            30      </duration>
+        <rate>                25         </rate>
+</InjectionStim>
+    </StimulationSet>
+

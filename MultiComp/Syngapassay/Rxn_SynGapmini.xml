@@ -1,0 +1,110 @@
+<ReactionScheme>
+
+    
+        <Specie name="Ca"             id="Ca"            kdiff="174.3" kdiffunit="mu2/s"/> 
+	<Specie name="SynGap"                              id="SynGap"                kdiff="5"     kdiffunit="mu2/s"/><!--5-->
+	<Specie name="pSynGap"                             id="pSynGap"               kdiff="5"     kdiffunit="mu2/s"/>	
+	<Specie name="CK"                                  id="CK"                    kdiff="3.6"     kdiffunit="mu2/s"/>
+	<Specie name="CKp"                                 id="CKp"                   kdiff="3.6"     kdiffunit="mu2/s"/>
+	<Specie name="CKpPP1"                              id="CKpPP1"                kdiff="0"     kdiffunit="mu2/s"/>
+	<Specie name="CamCa4"                              id="CamCa4"                kdiff="0"     kdiffunit="mu2/s"/>
+	<Specie name="CKCamCa4"                            id="CKCamCa4"              kdiff="3.6"     kdiffunit="mu2/s"/>
+	<Specie name="CKpCamCa4"                           id="CKpCamCa4"             kdiff="3.6"     kdiffunit="mu2/s"/>	
+	<Specie name="CKpCamCa4SynGap"                     id="CKpCamCa4SynGap"       kdiff="0"     kdiffunit="mu2/s"/>
+<Specie name="SynGapPSD95"                              id="SynGapPSD95"                kdiff="0"     kdiffunit="mu2/s"/>
+	<Specie name="PSD95"                              id="PSD95"                kdiff="0"     kdiffunit="mu2/s"/>
+	<Specie name="RasSynGapPSD95"     id="RasSynGapPSD95"    kdiff="0"     kdiffunit="mu2/s"/>
+        <Specie name="Rap1SynGapPSD95"     id="Rap1SynGapPSD95"    kdiff="0"     kdiffunit="mu2/s"/>
+        <Specie name="CKpCamCa4SynGapPSD95"                              id="CKpCamCa4SynGapPSD95"                kdiff="0"     kdiffunit="mu2/s"/>
+
+
+
+
+
+<Reaction name ="SynGap+PSD95--cabuff" id="ca+cbuff--cabuff">
+              <Reactant specieID="SynGap"/>
+              <Reactant specieID="PSD95"/>
+	      <Product specieID="SynGapPSD95"/>
+
+        <forwardRate> 1e-6 </forwardRate> <!--1e-3-->
+	<reverseRate> 4.7e-6 </reverseRate> <!--0.01e-3-->
+</Reaction>
+
+
+
+<!--
+
+<Reaction name = "DaDbuf-Da+Dbuf" id="DaDbuf-Da+Dbuf">
+        <Product  specieID="Ca"                     />
+        <forwardRate> 5e-5 </forwardRate>
+        <reverseRate> 1e-6      </reverseRate>
+    </Reaction>
+    -->
+
+
+
+
+
+
+
+
+<Reaction name = "CKpCamCa4+SynGap--CKpCamCa4Gap" id="CKpCamCa4+SynGap--CKpCamCa4Gap">
+  <Reactant specieID="CKpCamCa4" />
+  <Reactant specieID="SynGapPSD95" />
+  <Product specieID="CKpCamCa4SynGapPSD95" />
+  
+
+  <forwardRate> 0.3067258192987457e-3</forwardRate>   <!--reduced by 100x,NEW RATE IS 0.003 TO DELAY EQ?-->
+  <reverseRate> 0.058715155531797236 </reverseRate>
+
+ </Reaction>
+
+<Reaction name = "CKpCamCa4Gap--CKpCamCa4+pSynGap" id="CKpCamCa4Gap--CKpCamCa4+pSynGap">
+  <Reactant specieID="CKpCamCa4SynGapPSD95" />
+  <Product specieID="pSynGap" />
+  <Product specieID="CKpCamCa4" />
+   <Product specieID="PSD95" />
+   
+  <forwardRate> 0.0006484330410680531</forwardRate>
+  <reverseRate> 0 </reverseRate>
+
+ </Reaction>
+ 
+  <Reaction name = "CKpCamCa4+SynGap--CKpCamCa4Gap" id="CKpCamCa4+SynGap--CKpCamCa4Gap">
+  <Reactant specieID="CKpCamCa4" />
+  <Reactant specieID="SynGap" />
+  <Product specieID="CKpCamCa4SynGap" />
+
+  <forwardRate> 0.3067258192987457e-3</forwardRate>   <!--reduced by 100x-->
+  <reverseRate> 0.058715155531797236 </reverseRate>
+
+ </Reaction>
+
+
+ <Reaction name = "CKpCamCa4Gap--CKpCamCa4+pSynGap" id="CKpCamCa4Gap--CKpCamCa4+pSynGap">
+  <Reactant specieID="CKpCamCa4SynGap" />
+  <Product specieID="pSynGap" />
+  <Product specieID="CKpCamCa4" />
+
+  <forwardRate> 0.0006484330410680531</forwardRate>
+  <reverseRate> 0 </reverseRate>
+
+ </Reaction>
+ 
+ 
+ 
+ 
+<Reaction name ="pSynGap-SynGap" id="pSynGap-SynGap">
+	  <Reactant specieID="pSynGap"/>
+	  <Product specieID="SynGap"/>
+
+        <forwardRate> 1e-3 </forwardRate>
+	<reverseRate> 0 </reverseRate>
+    </Reaction>
+
+
+
+
+
+
+</ReactionScheme>

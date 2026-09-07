@@ -1,0 +1,34 @@
+    <StimulationSet>
+      <InjectionStim specieID="DaDbuf" injectionSite="sa1[0].pointA">
+        <onset>           50000        </onset>
+        <duration>           10         </duration>
+        <rate>               10.0    </rate>
+     </InjectionStim>
+      <InjectionStim specieID="DaDbuf" injectionSite="dend:submembrane">
+        <onset>           50000        </onset>
+        <duration>           10         </duration>
+        <rate>               50.0    </rate>
+      </InjectionStim>
+      <InjectionStim specieID="DaDbuf" injectionSite="sa1[0].pointA">
+        <onset>           50010        </onset>
+        <duration>       9990.0       </duration>
+        <rate>               0.2    </rate>
+      </InjectionStim>
+      <InjectionStim specieID="DaDbuf" injectionSite="dend:submembrane">
+        <onset>           50010        </onset>
+        <duration>       9990.0       </duration>
+        <rate>               0.3    </rate>
+      </InjectionStim>
+
+<InjectionStim specieID="AKAR3" injectionSite="dend:submembrane">
+        <onset>               1000          </onset>
+        <duration>            30      </duration>
+        <rate>                45         </rate>
+</InjectionStim>
+<InjectionStim specieID="AKAR3" injectionSite="sa1[0].pointA">
+        <onset>               1000          </onset>
+        <duration>            30      </duration>
+        <rate>                25         </rate>
+</InjectionStim>
+    </StimulationSet>
+

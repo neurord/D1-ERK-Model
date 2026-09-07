@@ -1,0 +1,102 @@
+<StimulationSet>
+
+
+
+
+
+  
+  
+ 
+<!-- *****************TRAIN 1 *** Da inject ********** -->  
+  <InjectionStim specieID="DaDbuf" injectionSite="PSD">
+        <onset>               50000          </onset>
+        <duration>            5              </duration>
+        <rate>                70           </rate>
+        <period>              20             </period>
+        <end>                 50066          </end>
+        <numTrains>           10             </numTrains>
+        <interTrainInterval>  29             </interTrainInterval>    
+  </InjectionStim>
+  
+  
+ 
+  
+  
+  <InjectionStim specieID="DaDbuf" injectionSite="PSD">
+        <onset>               65000          </onset>
+        <duration>            5              </duration>
+        <rate>                8           </rate>
+        <period>              20             </period>
+        <end>                 65066          </end>
+        <numTrains>           10             </numTrains>
+        <interTrainInterval>  29             </interTrainInterval>    
+  </InjectionStim>
+  
+
+  
+   <InjectionStim specieID="DaDbuf" injectionSite="PSD">
+        <onset>               80000          </onset>
+        <duration>            5              </duration>
+        <rate>                85           </rate>
+        <period>              20             </period>
+        <end>                 80066          </end>
+        <numTrains>           10             </numTrains>
+        <interTrainInterval>  29             </interTrainInterval>    
+  </InjectionStim>
+  
+     <InjectionStim specieID="DaDbuf" injectionSite="PSD">
+        <onset>               95000          </onset>
+        <duration>            5              </duration>
+        <rate>                9           </rate>
+        <period>              20             </period>
+        <end>                 95066          </end>
+        <numTrains>           10             </numTrains>
+        <interTrainInterval>  29             </interTrainInterval>    
+  </InjectionStim>
+  
+ 
+ 
+ <InjectionStim specieID="DaDbuf" injectionSite="PSD">
+        <onset>               110000          </onset>
+        <duration>            5              </duration>
+        <rate>                70           </rate>
+        <period>              20             </period>
+        <end>                 110066          </end>
+        <numTrains>           10             </numTrains>
+        <interTrainInterval>  29             </interTrainInterval>    
+  </InjectionStim>
+  
+  
+ 
+  
+  
+  
+<!--cAMP 
+ fast injection to have sharp increase
+  <InjectionStim specieID="cAMP" injectionSite="pointA">
+        <onset>              50000          </onset>
+        <duration>       1        </duration> 
+            <rate>              7500       </rate>
+      <period>        1001             </period>
+      <end>          51000           </end>     
+      <numTrains>           10             </numTrains>
+        <interTrainInterval>  14000          </interTrainInterval> 
+</InjectionStim>
+  maintained desire concentration
+<InjectionStim specieID="cAMP" injectionSite="pointA">
+           <onset>               50010          </onset>
+        <duration>        1         </duration> 
+            <rate>               170      </rate>
+            <period>        10             </period>
+      <end>          51000           </end>
+   <interTrainInterval>  14000           </interTrainInterval>
+    <numTrains>           10               </numTrains>
+</InjectionStim>  
+  
+-->
+
+
+
+</StimulationSet>
+  
+

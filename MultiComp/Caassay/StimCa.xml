@@ -1,0 +1,23 @@
+<StimulationSet>
+
+
+
+
+<InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
+        <onset>               50000          </onset>
+        <duration>            3              </duration>
+        <rate>                760            </rate>
+        <period>              20             </period>
+        <end>                 50016          </end>
+        <numTrains>           10             </numTrains>
+        <interTrainInterval>  29             </interTrainInterval>    
+</InjectionStim>
+
+
+
+
+ 
+
+</StimulationSet>
+  
+

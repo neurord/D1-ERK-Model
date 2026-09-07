@@ -1,0 +1,310 @@
+
+
+ <ReactionScheme>
+         
+    <!-- Gs coupled Dopamine D1 Receptor; Ligand currently called L,
+     Dbuf is used to eliminate injected D -->
+    <Specie name="Da"            id="Da"            kdiff="10"     kdiffunit="mu2/s"/>
+    <Specie name="Dbuf"          id="Dbuf"          kdiff="1"      kdiffunit="mu2/s"/>
+    <Specie name="DaDbuf"        id="DaDbuf"        kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="DaOut"         id="DaOut"         kdiff="1"      kdiffunit = "mu2/s"/>
+    <Specie name="D1R"           id="D1R"           kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="DaD1R"         id="DaD1R"         kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="Gsabg"         id="Gsabg"         kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="Gbg"         id="Gbg"         kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="DaD1RGs"       id="DaD1RGs"       kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="GsD1R"         id="GsD1R"         kdiff="0"     kdiffunit="mu2/s"/>
+    
+    <Specie name="GsaGTP"        id="GsaGTP"        kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="GsaGDP"        id="GsaGDP"        kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="Ca"            id="Ca"            kdiff="174.3"     kdiffunit="mu2/s"/>
+	
+    <Specie name="PDE10"          id="PDE10"         kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="PDE10cAMP"      id="PDE10cAMP"     kdiff="0"     kdiffunit="mu2/s"/>
+    
+    <Specie name="AMP"      id="AMP"     kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="cAMP"      id="cAMP"     kdiff="0"     kdiffunit="mu2/s"/>
+    
+    <Specie name="PDE4"          id="PDE4"         kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="PDE4cAMP"      id="PDE4cAMP"     kdiff="0"     kdiffunit="mu2/s"/>
+    
+    
+    <Specie name="PDE2"          id="PDE2"         kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="PDE2cAMP"      id="PDE2cAMP"     kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="PDE2cAMP2"      id="PDE2cAMP2"     kdiff="0"     kdiffunit="mu2/s"/>
+    
+    
+    <Specie name="pPDE10"         id="pPDE10"        kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="pPDE10cAMP"     id="pPDE10cAMP"    kdiff="0"     kdiffunit="mu2/s"/>
+    
+    <Specie name="pPDE4"        id="pPDE4"     kdiff="0" kdiffunit="mu2/s"/>    
+    <Specie name="pPDE4cAMP"    id="pPDE4cAMP" kdiff="0" kdiffunit="mu2/s"/>
+	
+    <Specie name="AC5"             id="AC5"            kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="AC5Gsa"          id="AC5Gsa"         kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="AC5GsaATP"       id="AC5GsaATP"      kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="AC5Ca"           id="AC5Ca"          kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="AC5GsaCa"        id="AC5GsaCa"       kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="AC5GsaCaATP"     id="AC5GsaCaATP"    kdiff="0"     kdiffunit="mu2/s"/>
+	
+	  
+  <!--II. *********** Gs coupled receptor, from GS RXN FILE *************-->
+    <!--0a. Injected DaDbuf dissociates to Dbuf (external) and Da: DaDbuf -> Da + Dbuf  -->
+    <Reaction name = "DaDbuf--Da+Dbuf" id="DaDbuf--Da+Dbuf">
+        <Reactant specieID="DaDbuf"                      />
+        <Product  specieID="Dbuf"                      />
+        <Product  specieID="Da"                     />
+        <forwardRate> 20e-03 </forwardRate>
+        <reverseRate> 0      </reverseRate>
+    </Reaction>
+    
+  <!--0b. Da or Da Agonist is extruded  -->
+   <Reaction name = "Da--DaOut" id="Da--DaOut">
+  	<Reactant specieID="Da"/>
+        <Product  specieID="DaOut"                   />
+        <forwardRate> 1e-3      </forwardRate> <!--1e-5 for yapo bath tuning-->
+        <reverseRate> 0.095e-6      </reverseRate> <!-- 0.055e-8 is original rate nadia-->
+    </Reaction>
+
+   <!--0c. excess DaOut eliminated to prevent baseline shift: DaOut + Dbuf  <->  DaOutbuf  -->
+    <Reaction name = "DaOut+Dbuf--NULL" id="DaOut_buf--NULL">
+        <Reactant specieID="DaOut"                      />
+        <Reactant specieID="Dbuf"                      />
+        <forwardRate> 1e-06 </forwardRate>
+        <reverseRate> 0      </reverseRate>
+    </Reaction>
+    
+
+
+ <!--1a. Da + D1R        <-> DaD1R      Kd=3000  source: Sunahara et al. Nature 1991-->
+    <Reaction name = "Da+D1R--DaD1R" id="Da+D1R--DaD1R">
+        <Reactant specieID="Da"                      />
+        <Reactant specieID="D1R"                      />
+        <Product  specieID="DaD1R"                     />
+
+        <forwardRate> 0.00166667e-03 </forwardRate>
+        <reverseRate> 5e-03        </reverseRate>
+    </Reaction>
+   <!-- 2a. DaD1R + Gsabg     <-> DaD1RGs      Kd=11.666667   source: Zhuang J Neurosci 2000-->
+    <Reaction name = "DaD1R+Gs--DaD1RGs" id="DaD1R+Gs--DaD1RGs">
+        <Reactant specieID="DaD1R"                     />
+        <Reactant specieID="Gsabg"                      />
+        <Product  specieID="DaD1RGs"                    />
+
+        <forwardRate> 0.03e-03 </forwardRate>
+        <reverseRate> 0.4e-03  </reverseRate>
+    </Reaction>
+    <!-- 1b. Gsabg + D1R       <-> GsD1R         Kd=35   source: PMR-->
+    <Reaction name = "Gsabg+D1R--GsD1R" id="Gsabg+D1R--GsD1R">
+        <Reactant specieID="Gsabg"                      />
+        <Reactant specieID="D1R"                      />
+        <Product  specieID="GsD1R"                     />
+
+        <forwardRate> 0.01e-03 </forwardRate>
+        <reverseRate> 0.4e-03  </reverseRate>
+    </Reaction>
+    <!-- 2b. GsD1R + Da       < - > DaD1RGs       Kd=1000   source: Falkenburger J Gen Phys off-rate, Dreyer J Neurosci-->
+    <Reaction name = "GsD1R+Da--DaD1RGs" id="GD1R+Da--DaD1RGs">
+        <Reactant specieID="GsD1R"                     />
+        <Reactant specieID="Da"                      />
+        <Product  specieID="DaD1RGs"                    />
+
+        <forwardRate> 0.005e-03 </forwardRate>
+        <reverseRate> 5e-03        </reverseRate>
+    </Reaction>
+
+    <!-- 3.  DaD1RGs <-> DaD1R + GsaGTP +Gbg-->
+        <Reaction name = "DaD1RGs-DaD1R+GsaGTP+Gbg reac" id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
+        <Reactant specieID="DaD1RGs"                    />
+        <Product  specieID="DaD1R"                  />
+        <Product  specieID="GsaGTP"                  />
+        <Product  specieID="Gbg"                  />
+
+        <forwardRate> 0.15e-03        </forwardRate>
+        <reverseRate> 0.0           </reverseRate>
+    </Reaction>
+
+    
+      <!--1. hydrolysis: GsaGTP       <-> GsaGDP             -->
+    <Reaction name = "GsaGTP--GsaGDP reac" id="GsaGTP--GsaGDP_id">
+        <Reactant specieID="GsaGTP"                  />
+        <Product  specieID="GsaGDP"                  />
+
+        <forwardRate> 0.01e-03        </forwardRate>
+        <reverseRate> 0.0           </reverseRate>
+    </Reaction>
+
+    <!-- slow this down if depletion is significant, or to match regen of Gqa -->
+    <!--2. regen: GsaGDP + Gbg       <-> Gsabg          (in xpp: k5=100), Kd=? -->
+    <Reaction name = "GsaGDP+Gbg--Gs reac" id="GsaGDP+Gbg--Gs_id">
+        <Reactant specieID="GsaGDP"                  />
+        <Reactant specieID="Gbg"                    />
+        <Product  specieID="Gsabg"                      />
+
+        <forwardRate> 2e-03       </forwardRate>
+        <reverseRate> 0.0           </reverseRate>
+    </Reaction>
+    
+    
+    !--V. AC5 to cAMP with PDEs, from Gs RXN FILE. May need to add AC1 at some point -->
+    <!--1. GsaGTP + AC5 <-> AC5Gsa(GTP) -->
+    <Reaction name = "GsaGTP+AC5--AC5Gsa reac" id="GsaGTP+AC5--AC5Gsa_id">
+        <Reactant specieID="GsaGTP"                  />
+        <Reactant specieID="AC5"                     />
+        <Product  specieID="AC5Gsa"                />
+
+        <forwardRate> 0.0148e-03   </forwardRate>
+        <reverseRate> 3.996e-03        </reverseRate>
+    </Reaction>
+    <!--2. AC5Gsa(GTP) + ATP    <-> AC5Gsa(GTP)ATP     -->
+    <Reaction name = "AC5Gsa+ATP--AC5GsaATP reac" id="AC5Gsa+ATP--AC5GsaATP_id">
+        <Reactant specieID="AC5Gsa"                />
+        <!--Reactant specieID="ATP"                    /-->
+        <Product  specieID="AC5GsaATP"             />
+
+        <!--if ATP: forwardRate> 0.1276e-6    </forwardRate-->
+        <forwardRate> 0.2552    </forwardRate>
+        <reverseRate> 0.2612e-03    </reverseRate>
+    </Reaction>
+    <!--3. AC5Gsa(GTP)ATP       <-> AC5Gsa(GTP) + cAMP   -->
+    <Reaction name = "AC5GsaATP--AC5Gsa+cAMP reac" id="AC5GsaATP--AC5Gsa+cAMP_id">
+        <Reactant specieID="AC5GsaATP"             />
+        <Product  specieID="AC5Gsa"                />
+        <Product  specieID="cAMP"                   />
+
+        <forwardRate> 28.46e-03     </forwardRate>
+        <reverseRate> 0.2592e-6    </reverseRate>
+    </Reaction>
+    
+    <Reaction name = "AC5GsaATP--AC5Gsa+cAMP reac" id="AC5GsaATP--AC5Gsa+cAMP_id">
+        <Reactant specieID="AC5GsaATP"             />
+        <Product  specieID="AC5"                />
+        <Product  specieID="cAMP"                   />
+        <Product  specieID="GsaGDP"                   />
+
+        <forwardRate> 0.03e-03     </forwardRate>
+        <reverseRate> 0.0    </reverseRate>
+    </Reaction>
+    
+    <!--cAMP Buffer-->
+<!--VII. *****************PDE10 *******************************-->
+    <!--1. PDE10 + cAMP    <-> PDE10cAMP         (in xpp: KfPDE10=    KbPDE10=  ) -->
+    <Reaction name = "PDE10+cAMP--PDE10cAMP" id="PDE10+cAMP--PDE10cAMP_id">
+        <Reactant specieID="PDE10"                  />
+        <Reactant specieID="cAMP"                   />
+        <Product  specieID="PDE10cAMP"              />
+
+        <forwardRate> 0.084e-3        </forwardRate>
+        <reverseRate> 16.8e-3        </reverseRate>
+    </Reaction>
+    <!--2. PDE10cAMP        -> PDE10 + AMP       (in xpp: V_PDE10=18) -->
+    <Reaction name = "PDE10cAMP--PDE10+AMP" id="PDE10cAMP--PDE10+AMP_id">
+        <Reactant specieID="PDE10cAMP"              />
+        <Product  specieID="PDE10"                  />
+        <Product  specieID="AMP"                    />
+
+        <forwardRate> 4.2e-3         </forwardRate>
+        <reverseRate> 0.0           </reverseRate>
+    </Reaction>
+
+<!--IX. *****************pPDE10 activity *******************************-->
+    <!--1. pPDE10 + cAMP    <-> pPDE10cAMP          -->
+    <Reaction name = "pPDE10+cAMP--pPDE10cAMP" id="pPDE10+cAMP--pPDE10cAMP_id">
+        <Reactant specieID="pPDE10"                 />
+        <Reactant specieID="cAMP"                   />
+        <Product  specieID="pPDE10cAMP"             />
+
+        <forwardRate>  0.336e-3      </forwardRate>
+        <reverseRate>  67.2e-3        </reverseRate>
+    </Reaction>
+
+    <!--2. pPDE10cAMP        -> pPDE10 + AMP       source: -->
+    <Reaction name = "pPDE10cAMP--pPDE10+AMP" id="pPDE10cAMP--pPDE10+AMP_id">
+        <Reactant specieID="pPDE10cAMP"             />
+        <Product  specieID="pPDE10"                 />
+        <Product  specieID="AMP"                    />
+
+        <forwardRate>  16.8e-3        </forwardRate>
+        <reverseRate>  0.0          </reverseRate>
+    </Reaction>
+    
+    <!-- PDE2 buff for cAMP, two steps-->
+<Reaction name = "PDE2+cAMP--PDE2cAMP" id="PDE2+cAMP--PDE2cAMP">
+        <Reactant specieID="PDE2"                  />
+        <Reactant specieID="cAMP"                   />
+        <Product  specieID="PDE2cAMP"              />
+
+        <forwardRate> 0.00002e-3        </forwardRate>
+	<reverseRate> 0.5e-3        </reverseRate>
+     
+</Reaction>
+
+ <Reaction name = "PDE2cAMP+cAMP--PDE2cAMP2" id="PDE2cAMP+cAMP--PDE2cAMP2">
+        <Reactant specieID="PDE2cAMP"              />
+        <Reactant specieID="cAMP"                   />
+	<Product specieID="PDE2cAMP2"              />
+        <forwardRate> 0.0059e-3         </forwardRate>
+        <reverseRate> 0.5e-3           </reverseRate>
+    </Reaction>
+  
+    <Reaction name = "PDE2cAMP2--PDE2cAMP+AMP" id="PDE2cAMP2--PDE2cAMP+AMP">
+	<Reactant specieID="PDE2cAMP2"              />
+        <Product specieID="PDE2cAMP"              />
+        <Product  specieID="AMP"                    />
+        <forwardRate> 5.4e-3         </forwardRate>
+        <reverseRate> 0.0           </reverseRate>
+    </Reaction>
+    
+<!-- PDE4 buff for cAMP cAMP + PDE4  <-> PDE4cAMP -->
+    <Reaction name = "PDE4 enzyme1" id="PDE4bind">
+        <Reactant specieID="PDE4"           />
+        <Reactant specieID="cAMP"            />
+        <Product  specieID="PDE4cAMP"       />
+        <forwardRate> 0.0216e-03  </forwardRate>
+        <reverseRate> 68.95e-03    </reverseRate>
+    </Reaction>
+
+    <!--  PDE4cAMP -> AMP + PDE4 -->
+    <Reaction name = "PDE4 actvcomp" id="PDE4cat">
+        <Reactant specieID="PDE4cAMP"       />
+        <Product  specieID="PDE4"           />
+        <Product  specieID="AMP"             />
+        <forwardRate> 17.233e-03    </forwardRate>
+        <reverseRate> 0            </reverseRate>
+</Reaction>
+ <!-- 17)  cAMP + pPDE4  <-> pPDE4cAMP -->
+    <Reaction name = "pPDE4 enzyme1" id="pPDE4bind">
+        <Reactant specieID="pPDE4"           />
+        <Reactant specieID="cAMP"             />
+        <Product  specieID="pPDE4cAMP"       />
+        <forwardRate> 0.0864e-03   </forwardRate>
+        <reverseRate> 275.8e-3  </reverseRate>
+    </Reaction>
+
+    <!-- 18)  pPDE4cAMP -> AMP + pPDE4 -->
+    <Reaction name = "pPDE4 actvcomp" id="pPDE4cat">
+        <Reactant specieID="pPDE4cAMP"       />
+        <Product  specieID="pPDE4"           />
+        <Product  specieID="AMP"              />
+        <forwardRate> 68.932e-3   </forwardRate>
+        <reverseRate> 0            </reverseRate>
+    </Reaction>
+
+	 
+
+
+
+
+</ReactionScheme>
+
+
+
+
+
+
+
+
+
+
+
+

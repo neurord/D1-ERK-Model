@@ -1,0 +1,54 @@
+<StimulationSet>
+
+ <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
+        <onset>               20000          </onset>
+        <duration>            3              </duration>
+        <rate>                160            </rate>
+        <period>              20             </period>
+        <end>                 20066          </end>
+        <numTrains>           10             </numTrains>
+        <interTrainInterval>  29             </interTrainInterval>    
+</InjectionStim>
+
+<InjectionStim specieID="Ca" injectionSite="dend:submembrane">
+        <onset>               20000          </onset>
+        <duration>            3              </duration>
+        <rate>                150            </rate>
+        <period>              20             </period>
+        <end>                 20066          </end>
+        <numTrains>           10             </numTrains>
+        <interTrainInterval>  29             </interTrainInterval>     
+</InjectionStim>
+
+
+
+<InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
+        <onset>               35000          </onset>
+        <duration>            3              </duration>
+        <rate>                160            </rate>
+        <period>              20             </period>
+        <end>                 35066          </end>
+        <numTrains>           10             </numTrains>
+        <interTrainInterval>  29             </interTrainInterval>    
+</InjectionStim>
+<InjectionStim specieID="Ca" injectionSite="dend:submembrane">
+        <onset>               35000          </onset>
+        <duration>            3              </duration>
+        <rate>                150            </rate>
+        <period>              20             </period>
+        <end>                 35066          </end>
+        <numTrains>           10             </numTrains>
+        <interTrainInterval>  29             </interTrainInterval>     
+</InjectionStim>
+
+
+    
+ 
+
+
+
+
+
+</StimulationSet>
+  
+

@@ -1,0 +1,19 @@
+<InitialConditions>
+  <ConcentrationSet>
+    <NanoMolarity specieID="Ca" value="75" />  
+    <NanoMolarity specieID="pSynGap" value="0" />       
+  </ConcentrationSet>
+  
+  <SurfaceDensitySet region="dend">  
+    <PicoSD specieID="SynGap" value="150" />      
+  </SurfaceDensitySet>
+ 
+  <ConcentrationSet region="head">  
+  
+    <NanoMolarity specieID="SynGap" value="986.516" />
+    <NanoMolarity specieID="pSynGap" value="1.02" />
+    <NanoMolarity specieID="PSD95" value="800" />    
+    
+  </ConcentrationSet>
+  
+</InitialConditions>

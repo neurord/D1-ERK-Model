@@ -1,0 +1,177 @@
+
+ 
+<OutputScheme>
+
+  <!-- ===================== -->
+  <!-- FULL LIST: DEND -->
+  <!-- ===================== -->
+  <OutputSet filename="dend_full" region="dend" dt="100.0">
+
+
+
+
+
+    <OutputSpecie name="RasGTP"/>
+    <OutputSpecie name="RasGDP"/>
+
+   
+
+    <OutputSpecie name="rasGap"/>
+    <OutputSpecie name="RasGTPGap"/>
+
+
+
+
+    <OutputSpecie name="Ca"/>
+   
+
+    <OutputSpecie name="RasSynGap"/>
+    <OutputSpecie name="RaspSynGap"/>
+
+
+    <OutputSpecie name="SynGap"/>
+    <OutputSpecie name="SynGapPSD95"/>
+    <OutputSpecie name="PSD95"/>
+    
+    <OutputSpecie name="pSynGap"/>
+
+    <OutputSpecie name="CK"/>
+    <OutputSpecie name="CKp"/>
+    <OutputSpecie name="CKCamCa4"/>
+    <OutputSpecie name="CKpCamCa4"/>
+    <OutputSpecie name="CKpCamCa4SynGap"/>
+
+
+
+    
+
+  </OutputSet>
+
+
+  <!-- ===================== -->
+  <!-- FULL LIST: NECK -->
+  <!-- (Same list as dend_full, but written to neck_full) -->
+  <!-- ===================== -->
+  <OutputSet filename="neck_full" region="neck" dt="100.0">
+
+
+    <!-- same species list as dend_full -->
+     <OutputSpecie name="RasGTP"/>
+    <OutputSpecie name="RasGDP"/>
+
+   
+
+    <OutputSpecie name="rasGap"/>
+    <OutputSpecie name="RasGTPGap"/>
+
+
+
+
+    <OutputSpecie name="Ca"/>
+   
+
+    <OutputSpecie name="RasSynGap"/>
+    <OutputSpecie name="RaspSynGap"/>
+
+
+    <OutputSpecie name="SynGap"/>
+    <OutputSpecie name="SynGapPSD95"/>
+    <OutputSpecie name="PSD95"/>
+    
+    <OutputSpecie name="pSynGap"/>
+
+    <OutputSpecie name="CK"/>
+    <OutputSpecie name="CKp"/>
+    <OutputSpecie name="CKCamCa4"/>
+    <OutputSpecie name="CKpCamCa4"/>
+    <OutputSpecie name="CKpCamCa4SynGap"/>
+
+    
+  </OutputSet>
+
+
+  <!-- ===================== -->
+  <!-- FULL LIST: HEAD -->
+  <!-- ===================== -->
+  <OutputSet filename="head_full" region="head" dt="100.0">
+
+    <!-- same list as dend_full -->
+     <OutputSpecie name="RasGTP"/>
+    <OutputSpecie name="RasGDP"/>
+
+   
+
+    <OutputSpecie name="rasGap"/>
+    <OutputSpecie name="RasGTPGap"/>
+
+
+
+
+    <OutputSpecie name="Ca"/>
+   
+
+    <OutputSpecie name="RasSynGap"/>
+    <OutputSpecie name="RaspSynGap"/>
+
+
+    <OutputSpecie name="SynGap"/>
+    <OutputSpecie name="SynGapPSD95"/>
+    <OutputSpecie name="PSD95"/>
+    
+    <OutputSpecie name="pSynGap"/>
+
+    <OutputSpecie name="CK"/>
+    <OutputSpecie name="CKp"/>
+    <OutputSpecie name="CKCamCa4"/>
+    <OutputSpecie name="CKpCamCa4"/>
+    <OutputSpecie name="CKpCamCa4SynGap"/>
+
+  
+  </OutputSet>
+  
+
+
+  <!-- ===================== -->
+  <!-- FULL LIST: PSD -->
+  <!-- ===================== -->
+  <OutputSet filename="PSD_full" region="PSD" dt="100.0">
+
+    <!-- same list as dend_full -->
+     <OutputSpecie name="RasGTP"/>
+    <OutputSpecie name="RasGDP"/>
+
+   
+
+    <OutputSpecie name="rasGap"/>
+    <OutputSpecie name="RasGTPGap"/>
+
+
+
+
+    <OutputSpecie name="Ca"/>
+   
+
+    <OutputSpecie name="RasSynGap"/>
+    <OutputSpecie name="RaspSynGap"/>
+
+
+    <OutputSpecie name="SynGap"/>
+    <OutputSpecie name="SynGapPSD95"/>
+    <OutputSpecie name="PSD95"/>
+    
+    <OutputSpecie name="pSynGap"/>
+
+    <OutputSpecie name="CK"/>
+    <OutputSpecie name="CKp"/>
+    <OutputSpecie name="CKCamCa4"/>
+    <OutputSpecie name="CKpCamCa4"/>
+    <OutputSpecie name="CKpCamCa4SynGap"/>
+
+    
+  </OutputSet>
+
+
+ 
+
+</OutputScheme>
+

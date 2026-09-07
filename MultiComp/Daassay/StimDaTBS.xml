@@ -1,0 +1,57 @@
+<StimulationSet>
+
+<!-- the injectionSite must match a regionLabel defined in the morphology  -->
+   
+    <!-- one dendrite injection, sa2[:], is distributed over all the spine
+	 (each spine gets total/num spines) 
+	 four Glu and Ca pulses at 50 Hz, repeated 10x= 40 pulses per train -->
+
+  <!-- This Da is single pulse, representing 4 pulse burst, burst 1 amp = 2x 1st pulse of 20 Hz
+    longer duration of inject provides for the >100ms rise time-->
+  <!-- the 15 s repetition of train provides the first burst for each of 10 trains -->
+  <InjectionStim specieID="DaDbuf" injectionSite="sa1[0].pointA">
+        <onset>               20000          </onset>
+        <duration>            60              </duration>
+        <rate>                9.0           </rate>
+        <period>              105             </period>
+        <end>                 20100          </end>
+  </InjectionStim>
+
+  <!-- These next Da are single pulse, represent 4 pulse burst; burst 2-10 amp = 1/2 amp of 1st burst -->
+  <!-- the 15 s repetition of train provides bursts 2-10 for each of 10 trains -->
+  <InjectionStim specieID="DaDbuf" injectionSite="sa1[0].pointA">
+        <onset>               20095          </onset>
+        <duration>            60              </duration>
+        <rate>                3.5           </rate>
+        <period>              95             </period>
+        <end>                 20949          </end>
+  </InjectionStim>
+  
+  <!-- bursts 2-10 are lower amplitude than 1st burst -->
+  <InjectionStim specieID="DaDbuf" injectionSite="sa1[0].pointA">
+        <onset>               35000          </onset>
+        <duration>            60              </duration>
+        <rate>                4.0           </rate>
+        <period>              105             </period>
+        <end>                 35100          </end>
+        <numTrains>           9             </numTrains>
+        <interTrainInterval>  14900             </interTrainInterval>    
+  </InjectionStim>
+
+  <!-- These next Da are single pulse, represent 4 pulse burst; burst 2-10 amp = 1/2 amp of 1st burst -->
+  <!-- the 15 s repetition of train provides bursts 2-10 for each of 10 trains -->
+  <InjectionStim specieID="DaDbuf" injectionSite="sa1[0].pointA">
+        <onset>               35095          </onset>
+        <duration>            60              </duration>
+        <rate>                2           </rate>
+        <period>              95             </period>
+        <end>                 35949          </end>
+        <numTrains>           9             </numTrains>
+        <interTrainInterval>  14051             </interTrainInterval>    
+  </InjectionStim>
+
+
+
+</StimulationSet>
+  
+

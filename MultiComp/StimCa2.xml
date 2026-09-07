@@ -1,0 +1,63 @@
+<StimulationSet>
+
+<InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
+        <onset>               25000          </onset>
+        <duration>            3              </duration>
+        <rate>                80            </rate>
+        <period>              20             </period>
+        <end>                 25066          </end>
+        <numTrains>           10             </numTrains>
+        <interTrainInterval>  29             </interTrainInterval>    
+</InjectionStim>
+
+       
+<InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
+        <onset>               40000          </onset>
+        <duration>            3              </duration>
+        <rate>                80            </rate>
+        <period>              20             </period>
+        <end>                 40066          </end>
+        <numTrains>           10             </numTrains>
+        <interTrainInterval>  29             </interTrainInterval>    
+</InjectionStim>
+
+
+<InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
+        <onset>               55000          </onset>
+        <duration>            3              </duration>
+        <rate>                80            </rate>
+        <period>              20             </period>
+        <end>                 55066          </end>
+        <numTrains>           10             </numTrains>
+        <interTrainInterval>  29             </interTrainInterval>    
+</InjectionStim>
+
+<InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
+        <onset>               70000          </onset>
+        <duration>            3              </duration>
+        <rate>                80            </rate>
+        <period>              20             </period>
+        <end>                 70066          </end>
+        <numTrains>           10             </numTrains>
+        <interTrainInterval>  29             </interTrainInterval>    
+</InjectionStim>
+
+
+<InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
+        <onset>               85000          </onset>
+        <duration>            3              </duration>
+        <rate>                80            </rate>
+        <period>              20             </period>
+        <end>                 85066          </end>
+        <numTrains>           10             </numTrains>
+        <interTrainInterval>  29             </interTrainInterval>    
+</InjectionStim>
+
+
+
+
+ 
+
+</StimulationSet>
+  
+
