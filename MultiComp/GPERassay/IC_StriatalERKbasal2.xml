@@ -1,0 +1,76 @@
+<InitialConditions>
+
+  <!-- ========================= -->
+  <!-- GLOBAL VOLUME SPECIES -->
+  <!-- ========================= -->
+  <ConcentrationSet>
+
+   
+    
+        <!-- D1 associated membrane molecules -->
+        
+         <NanoMolarity specieID="Da"          value="10" />
+        <NanoMolarity specieID="D1R"            value="0" />
+       
+        <NanoMolarity specieID="Gsabg"          value="0" />
+        <NanoMolarity specieID="DaD1RGs"        value="0" />
+	<NanoMolarity specieID="GsD1R"          value="0" />
+        <NanoMolarity specieID="GsaGTP"         value="0" />
+        <NanoMolarity specieID="GsaGDP"         value="0" />
+        <NanoMolarity specieID="Gbg"            value="360" />
+       
+	    <NanoMolarity specieID="DaOut" value="200000"/>
+	        
+   
+    
+    
+	
+  </ConcentrationSet>
+
+
+  <!-- ========================= -->
+  <!-- SURFACE SPECIES: DEND -->
+  <!-- ========================= -->
+  <SurfaceDensitySet region="dend">
+
+    <PicoSD specieID="D1R" value="100"/> <!-- Not sure 100?-->
+    <PicoSD specieID="DaD1R" value="0"/>
+    <PicoSD specieID="Gsabg" value="1765"/>
+    <PicoSD specieID="DaD1RGs" value="0"/>
+    <PicoSD specieID="GsD1R" value="100"/> <!-- Not sure 100?-->
+    <PicoSD specieID="pDaD1RGs" value="0"/>
+    <PicoSD specieID="PKAcDaD1RGs" value="0"/>
+    <PicoSD specieID="GsaGDP" value="0"/>
+    <PicoSD specieID="GsaGTP" value="0"/>
+    <PicoSD specieID="Gbg" value="360"/>
+
+   
+
+  </SurfaceDensitySet>
+
+
+  
+
+  <ConcentrationSet region="head">
+   
+    
+    <NanoMolarity specieID="D1R" value="100"/>
+    <NanoMolarity specieID="DaD1R" value="0"/>
+    <NanoMolarity specieID="Gsabg" value="1680"/>
+    <NanoMolarity specieID="GsD1R" value="100"/>
+    <NanoMolarity specieID="DaD1RGs" value="0"/>
+    <NanoMolarity specieID="pDaD1RGs" value="0"/>
+    <NanoMolarity specieID="pGsD1R" value="0"/>
+    <NanoMolarity specieID="GsaGTP" value="0"/>
+    <NanoMolarity specieID="GsaGDP" value="0"/>
+    <NanoMolarity specieID="Gbg" value="360"/>
+
+    
+   
+</ConcentrationSet>
+
+
+
+
+</InitialConditions>
+

@@ -1,0 +1,65 @@
+
+
+ <ReactionScheme>
+         
+    <!-- Gs coupled Dopamine D1 Receptor; Ligand currently called L,
+     Dbuf is used to eliminate injected D -->
+    <Specie name="Glu"            id="Glu"           kdiff="0.1"   kdiffunit="mu2/s"/>
+    <Specie name="GluGbuf"        id="GluGbuf"       kdiff="0"    kdiffunit="mu2/s"/>
+    <Specie name="GluOut"         id="GluOut"        kdiff="1"   kdiffunit="mu2/s"/>
+    <Specie name="Gbuf"           id="Gbuf"          kdiff="0"     kdiffunit="mu2/s"/>
+	
+	
+	
+	
+	  
+  <!--II. *********** Gs coupled receptor, from GS RXN FILE *************-->
+    <!--0a. Injected DaDbuf dissociates to Dbuf (external) and Da: DaDbuf -> Da + Dbuf  -->
+    <!--0a. Injected DaDbuf dissociates to Dbuf (external) and Da: DaDbuf -> Da + Dbuf  -->
+    <Reaction name = "Glubuf--Glu+Gbuf" id="GluGbuf--Glu+Gbuf">
+        <Reactant specieID="GluGbuf"                      />
+        <Product  specieID="Gbuf"                      />
+        <Product  specieID="Glu"                     />
+        <forwardRate> 20e-03 </forwardRate>
+        <reverseRate> 0      </reverseRate>
+    </Reaction>
+    
+    <!--0b. GluOut    Glu <-> GluOut>  -->
+  <Reaction name = "Glu--GluOut" id="Glu--GluOut">
+  	<Reactant specieID="Glu"/>
+	<Product specieID="GluOut"/>
+
+  	<forwardRate>1.2e-3</forwardRate>
+  	<reverseRate>0.06e-6</reverseRate>
+  </Reaction>
+  
+  <!--0c. GluOut eliminated to prevent baseline shift: GluOut + Gbuf <-> Null -->
+    <Reaction name = "GluOut-buf reac" id="Glu-buf_id">
+        <Reactant specieID="GluOut"                      />
+        <Reactant specieID="Gbuf"                      />
+
+        <forwardRate> 1e-6      </forwardRate>
+        <reverseRate> 0      </reverseRate>
+    </Reaction>
+    
+        
+    
+      
+	 
+
+
+
+
+</ReactionScheme>
+
+
+
+
+
+
+
+
+
+
+
+

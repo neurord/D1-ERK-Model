@@ -1,0 +1,166 @@
+
+
+ <ReactionScheme>
+ 
+    
+ 
+    <Specie name="Pla2"          	  id="Pla2"           kdiff="0"    kdiffunit="mu2/s"/>
+    <Specie name="Pla2ac"            id="Pla2ac"           kdiff="0"    kdiffunit="mu2/s"/>
+    <Specie name="Pla2acAPC"            id="Pla2acAPC"           kdiff="0"    kdiffunit="mu2/s"/>
+    <Specie name="Pla2Ca"            id="Pla2Ca"           kdiff="0"    kdiffunit="mu2/s"/>
+    <Specie name="pPla2acAPC"            id="pPla2acAPC"           kdiff="0"    kdiffunit="mu2/s"/>
+    <Specie name="pPla2ac"            id="pPla2ac"           kdiff="0"    kdiffunit="mu2/s"/>
+    
+    <Specie name="CaBuff"            id="CaBuff"           kdiff="0"    kdiffunit="mu2/s"/>
+   
+    
+    <Specie name="APC"            id="APC"           kdiff="0"    kdiffunit="mu2/s"/>
+  
+    
+    <Specie name="AA"            id="AA"           kdiff="0"    kdiffunit="mu2/s"/>
+     <Specie name="Dag"            id="Dag"           kdiff="0"    kdiffunit="mu2/s"/>
+      
+    
+
+    
+	
+   
+    <Specie name="Ca"             id="Ca"            kdiff="174.3" kdiffunit="mu2/s"/>
+  
+   
+	
+    
+
+
+<!--
+	
+ <Reaction name = "Ca-C+Dbuf" id="DaDbuf-Da+Dbuf">
+        <Product  specieID="Ca"                     />
+        <forwardRate> 5e-5 </forwardRate>
+        <reverseRate> 1e-6      </reverseRate>
+    </Reaction>
+    -->
+    
+  <Reaction name = "DaDbuf--Da+Dbuf" id="DaDbuf--Da+Dbuf">
+        <Reactant  specieID="Ca"                     />
+        <Reactant  specieID="CaBuff"                     />
+        <forwardRate> 1 </forwardRate>
+        <reverseRate> 0     </reverseRate>
+    </Reaction>
+    
+    
+
+
+
+
+
+
+
+
+<!--Adding the PKC loop of ERK activation from Bhallas paper
+
+The rxns added are PKC activation of Raf1,ppERK activating pla2 which in turn activates apc to arichadonic acid.Now AA activates pkc-->
+           
+	<!-- (Raf1 binds to Ras, step 1) RasGTP + Raf1 <-> RasGTPRaf1 -->
+    
+    
+	 <Reaction name = "APC+Pla2ac--Pla2acAPC" id="APC+Pla2ac--Pla2acAPC">
+        <Reactant specieID="Pla2ac"           />
+        <Reactant  specieID="APC"               />
+        <Product  specieID="Pla2acAPC"               />
+
+        <forwardRate> 0.001e-3  </forwardRate>
+	<reverseRate> 0.002   </reverseRate>
+		
+    </Reaction>
+
+     <Reaction name = "Pla2acAPC--AA+pla2ac" id="Pla2acAPC--AA+pla2ac">
+        <Reactant specieID="Pla2acAPC"           />
+        <Product  specieID="AA"               />
+        <Product  specieID="Pla2ac"               />
+
+        <forwardRate>  0.003  </forwardRate>  <!--My AA is very unstable,need to fix this original rate is 0.003, made it 0.003e-2 to reduce fluctuations??-->
+	<reverseRate> 0   </reverseRate>
+		
+    </Reaction>
+    
+
+    
+
+
+    <Reaction name = "APC+Pla2ac--Pla2acAPC" id="APC+Pla2ac--Pla2acAPC">
+        <Reactant specieID="pPla2ac"           />
+        <Reactant  specieID="APC"               />
+        <Product  specieID="pPla2acAPC"               />
+
+        <forwardRate> 0.001e-3   </forwardRate>
+	<reverseRate> 0.002   </reverseRate>
+		
+    </Reaction>
+
+     <Reaction name = "pPla2acAPC--AA+pla2ac" id="pPla2acAPC--AA+pla2ac">
+        <Reactant specieID="pPla2acAPC"           />
+        <Product  specieID="AA"               />
+        <Product  specieID="pPla2ac"               />
+
+        <forwardRate>  0.012e-1  </forwardRate>   <!--My AA is very unstable,need to fix this original rate is 0.012, made it 0.012e-2 to reduce fluctuations??-->
+	<reverseRate> 0   </reverseRate>
+		
+    </Reaction>
+    
+    
+
+    
+    
+    <Reaction name = "Pla2+Ca--Pla2Ca" id="Pla2+Ca--Pla2Ca">
+        <Reactant specieID="Pla2"           />
+        <Reactant  specieID="Ca"               />
+	<Product  specieID="Pla2Ca"  />
+	
+        <forwardRate> 0.0177e-3   </forwardRate>
+	<reverseRate> 0.1545   </reverseRate>
+		
+    </Reaction>
+
+    <Reaction name = "Pla2Ca+Ca--Pla2Ca" id="Pla2Ca+Ca--Pla2Ca">
+        <Reactant specieID="Pla2Ca"           />
+        <Reactant  specieID="Ca"               />
+        <Product  specieID="Pla2ac"               />     <!--Ca binding to Pla2 ,Gallimore Cell report-->
+
+        <forwardRate> 0.0163e-3   </forwardRate>
+	<reverseRate> 0.101   </reverseRate>
+	
+	
+    </Reaction>
+    
+    
+   
+    
+    
+    
+    
+    
+   <Reaction name = "AA -> " id = "AA -> NULL">
+    	<Reactant specieID="AA"		/>
+	<Product specieID="APC"/>
+	<forwardRate> 0.4e-6 </forwardRate>  <!-- 0.4e-6 last run value,still reducing slightly-->
+	<reverseRate>0</reverseRate>
+	
+    </Reaction>
+       
+   
+   
+
+</ReactionScheme>
+
+
+
+
+
+
+
+
+
+
+
+

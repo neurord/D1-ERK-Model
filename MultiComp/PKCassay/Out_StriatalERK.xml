@@ -1,0 +1,195 @@
+
+ 
+<OutputScheme>
+
+    <!-- ===================== -->
+    <!-- FULL LIST: DEND -->
+    <!-- ===================== -->
+    <OutputSet filename="dend_full" region="dend" dt="100.0">
+
+    <OutputSpecie name="ERK"/>
+    <OutputSpecie name="ERKpY"/>
+    <OutputSpecie name="ERKpT"/>
+    <OutputSpecie name="ppERK"/>
+
+    <OutputSpecie name="MEK"/>
+    <OutputSpecie name="pMEK"/>
+    <OutputSpecie name="ppMEK"/>
+    <OutputSpecie name="ppMEKERK"/>
+    <OutputSpecie name="ppMEKpERK"/>
+
+    <OutputSpecie name="Raf1"/>
+    <OutputSpecie name="Raf1Ras"/>
+    <OutputSpecie name="pRaf1Ras"/>
+    <OutputSpecie name="dRaf1Ras"/>
+    <OutputSpecie name="dpRaf1Ras"/>
+
+    <OutputSpecie name="RasGTP"/>
+    <OutputSpecie name="RasGDP"/>
+
+    
+    <OutputSpecie name="Pkc"/>
+    <OutputSpecie name="PkcCa"/>
+
+
+
+    <OutputSpecie name="Pla2"/>
+    <OutputSpecie name="APC"/>
+    <OutputSpecie name="AA"/>
+
+    <OutputSpecie name="PP2A"/>
+    <OutputSpecie name="pMEKPP2A"/>
+    <OutputSpecie name="ppMEKPP2A"/>
+
+    <OutputSpecie name="MKP1"/>
+    <OutputSpecie name="pERKMKP1"/>
+    <OutputSpecie name="ppERKMKP1"/>
+
+   
+
+  </OutputSet>
+
+
+  <!-- ===================== -->
+  <!-- FULL LIST: NECK -->
+  <!-- (Same list as dend_full, but written to neck_full) -->
+  <!-- ===================== -->
+  <OutputSet filename="neck_full" region="neck" dt="100.0">
+
+   
+    <OutputSpecie name="ERK"/>
+    <OutputSpecie name="ERKpY"/>
+    <OutputSpecie name="ERKpT"/>
+    <OutputSpecie name="ppERK"/>
+
+    <OutputSpecie name="MEK"/>
+    <OutputSpecie name="pMEK"/>
+    <OutputSpecie name="ppMEK"/>
+    <OutputSpecie name="ppMEKERK"/>
+    <OutputSpecie name="ppMEKpERK"/>
+
+    <OutputSpecie name="Raf1"/>
+    <OutputSpecie name="Raf1Ras"/>
+    <OutputSpecie name="pRaf1Ras"/>
+    <OutputSpecie name="dRaf1Ras"/>
+    <OutputSpecie name="dpRaf1Ras"/>
+
+    <OutputSpecie name="RasGTP"/>
+    <OutputSpecie name="RasGDP"/>
+
+    
+    <OutputSpecie name="Pkc"/>
+    <OutputSpecie name="PkcCa"/>
+
+
+
+    <OutputSpecie name="Pla2"/>
+    <OutputSpecie name="APC"/>
+    <OutputSpecie name="AA"/>
+
+    <OutputSpecie name="PP2A"/>
+    <OutputSpecie name="pMEKPP2A"/>
+    <OutputSpecie name="ppMEKPP2A"/>
+
+    <OutputSpecie name="MKP1"/>
+    <OutputSpecie name="pERKMKP1"/>
+    <OutputSpecie name="ppERKMKP1"/>
+  </OutputSet>
+
+
+  <!-- ===================== -->
+  <!-- FULL LIST: HEAD -->
+  <!-- ===================== -->
+  <OutputSet filename="head_full" region="head" dt="100.0">
+    
+    <OutputSpecie name="ERK"/>
+    <OutputSpecie name="ERKpY"/>
+    <OutputSpecie name="ERKpT"/>
+    <OutputSpecie name="ppERK"/>
+
+    <OutputSpecie name="MEK"/>
+    <OutputSpecie name="pMEK"/>
+    <OutputSpecie name="ppMEK"/>
+    <OutputSpecie name="ppMEKERK"/>
+    <OutputSpecie name="ppMEKpERK"/>
+
+    <OutputSpecie name="Raf1"/>
+    <OutputSpecie name="Raf1Ras"/>
+    <OutputSpecie name="pRaf1Ras"/>
+    <OutputSpecie name="dRaf1Ras"/>
+    <OutputSpecie name="dpRaf1Ras"/>
+
+    <OutputSpecie name="RasGTP"/>
+    <OutputSpecie name="RasGDP"/>
+
+    
+    <OutputSpecie name="Pkc"/>
+    <OutputSpecie name="PkcCa"/>
+
+
+
+    <OutputSpecie name="Pla2"/>
+    <OutputSpecie name="APC"/>
+    <OutputSpecie name="AA"/>
+
+    <OutputSpecie name="PP2A"/>
+    <OutputSpecie name="pMEKPP2A"/>
+    <OutputSpecie name="ppMEKPP2A"/>
+
+    <OutputSpecie name="MKP1"/>
+    <OutputSpecie name="pERKMKP1"/>
+    <OutputSpecie name="ppERKMKP1"/>
+  </OutputSet>
+
+
+  <!-- ===================== -->
+  <!-- FULL LIST: PSD -->
+  <!-- ===================== -->
+  <OutputSet filename="PSD_full" region="PSD" dt="100.0">
+   
+    <OutputSpecie name="ERK"/>
+    <OutputSpecie name="ERKpY"/>
+    <OutputSpecie name="ERKpT"/>
+    <OutputSpecie name="ppERK"/>
+
+    <OutputSpecie name="MEK"/>
+    <OutputSpecie name="pMEK"/>
+    <OutputSpecie name="ppMEK"/>
+    <OutputSpecie name="ppMEKERK"/>
+    <OutputSpecie name="ppMEKpERK"/>
+
+    <OutputSpecie name="Raf1"/>
+    <OutputSpecie name="Raf1Ras"/>
+    <OutputSpecie name="pRaf1Ras"/>
+    <OutputSpecie name="dRaf1Ras"/>
+    <OutputSpecie name="dpRaf1Ras"/>
+
+    <OutputSpecie name="RasGTP"/>
+    <OutputSpecie name="RasGDP"/>
+
+    
+    <OutputSpecie name="Pkc"/>
+    <OutputSpecie name="PkcCa"/>
+
+
+
+    <OutputSpecie name="Pla2"/>
+    <OutputSpecie name="APC"/>
+    <OutputSpecie name="AA"/>
+
+    <OutputSpecie name="PP2A"/>
+    <OutputSpecie name="pMEKPP2A"/>
+    <OutputSpecie name="ppMEKPP2A"/>
+
+    <OutputSpecie name="MKP1"/>
+    <OutputSpecie name="pERKMKP1"/>
+    <OutputSpecie name="ppERKMKP1"/>
+    
+  </OutputSet>
+
+
+ 
+
+</OutputScheme>
+
+

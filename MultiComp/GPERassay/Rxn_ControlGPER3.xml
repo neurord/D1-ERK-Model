@@ -1,0 +1,119 @@
+
+<ReactionScheme>
+ 
+<!-- Gs coupled Dopamine D1 Receptor; Ligand currently called L,
+     Dbuf is used to eliminate injected D -->
+    <Specie name="Da"            id="Da"            kdiff="10"     kdiffunit="mu2/s"/>
+    <Specie name="Dbuf"          id="Dbuf"          kdiff="1"      kdiffunit="mu2/s"/>
+    <Specie name="DaDbuf"        id="DaDbuf"        kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="DaOut"         id="DaOut"         kdiff="1"      kdiffunit = "mu2/s"/>
+    <Specie name="D1R"           id="D1R"           kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="DaD1R"         id="DaD1R"         kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="Gsabg"         id="Gsabg"         kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="Gbg"         id="Gbg"         kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="DaD1RGs"       id="DaD1RGs"       kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="GsD1R"         id="GsD1R"         kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="PKAcDaD1RGs"   id="PKAcDaD1RGs"   kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="pDaD1RGs"      id="pDaD1RGs"      kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="pGsD1R"        id="pGsD1R"        kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="GsaGTP"        id="GsaGTP"        kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="GsaGDP"        id="GsaGDP"        kdiff="0"     kdiffunit="mu2/s"/>
+	
+	
+   
+   
+ 
+    
+ <!--II. *********** Gs coupled receptor, from GS RXN FILE *************-->
+    <!--0a. Injected DaDbuf dissociates to Dbuf (external) and Da: DaDbuf -> Da + Dbuf  -->
+    <Reaction name = "DaDbuf--Da+Dbuf" id="DaDbuf--Da+Dbuf">
+        <Reactant specieID="DaDbuf"                      />
+        <Product  specieID="Dbuf"                      />
+        <Product  specieID="Da"                     />
+        <forwardRate> 20e-03 </forwardRate>
+        <reverseRate> 0      </reverseRate>
+    </Reaction>
+    
+  <!--0b. Da or Da Agonist is extruded  -->
+    <Reaction name = "Da--DaOut" id="Da--DaOut">
+  	<Reactant specieID="Da"/>
+        <Product  specieID="DaOut"                   />
+        <forwardRate> 1e-3      </forwardRate> <!--1e-5 for yapo bath tuning-->
+        <reverseRate> 0.055e-6      </reverseRate> <!-- 0.055e-6 is original rate nadia,0.095e-6 for 20nM basal Da-->
+    </Reaction>
+
+   <!--0c. excess DaOut eliminated to prevent baseline shift: DaOut + Dbuf  <->  DaOutbuf  -->
+    <Reaction name = "DaOut+Dbuf--NULL" id="DaOut_buf--NULL">
+        <Reactant specieID="DaOut"                      />
+        <Reactant specieID="Dbuf"                      />
+        <forwardRate> 1e-06 </forwardRate>
+        <reverseRate> 0      </reverseRate>
+    </Reaction>
+    
+  <!--1a. Da + D1R        <-> DaD1R      Kd=3000  source: Sunahara et al. Nature 1991-->
+    <Reaction name = "Da+D1R--DaD1R" id="Da+D1R--DaD1R">
+        <Reactant specieID="Da"                      />
+        <Reactant specieID="D1R"                      />
+        <Product  specieID="DaD1R"                     />
+
+        <forwardRate> 0.00166667e-03 </forwardRate>
+        <reverseRate> 5e-03        </reverseRate>
+    </Reaction>
+   <!-- 2a. DaD1R + Gsabg     <-> DaD1RGs      Kd=11.666667   source: Zhuang J Neurosci 2000-->
+    <Reaction name = "DaD1R+Gs--DaD1RGs" id="DaD1R+Gs--DaD1RGs">
+        <Reactant specieID="DaD1R"                     />
+        <Reactant specieID="Gsabg"                      />
+        <Product  specieID="DaD1RGs"                    />
+
+        <forwardRate> 0.03e-03 </forwardRate>
+        <reverseRate> 0.4e-03  </reverseRate>
+    </Reaction>
+    <!-- 1b. Gsabg + D1R       <-> GsD1R         Kd=35   source: PMR-->
+    <Reaction name = "Gsabg+D1R--GsD1R" id="Gsabg+D1R--GsD1R">
+        <Reactant specieID="Gsabg"                      />
+        <Reactant specieID="D1R"                      />
+        <Product  specieID="GsD1R"                     />
+
+        <forwardRate> 0.01e-03 </forwardRate>
+        <reverseRate> 0.4e-03  </reverseRate>
+    </Reaction>
+    <!-- 2b. GsD1R + Da       < - > DaD1RGs       Kd=1000   source: Falkenburger J Gen Phys off-rate, Dreyer J Neurosci-->
+    <Reaction name = "GsD1R+Da--DaD1RGs" id="GD1R+Da--DaD1RGs">
+        <Reactant specieID="GsD1R"                     />
+        <Reactant specieID="Da"                      />
+        <Product  specieID="DaD1RGs"                    />
+
+        <forwardRate> 0.005e-03 </forwardRate>
+        <reverseRate> 5e-03        </reverseRate>
+    </Reaction>
+
+    <!-- 3.  DaD1RGs <-> DaD1R + GsaGTP +Gbg-->
+        <Reaction name = "DaD1RGs-DaD1R+GsaGTP+Gbg reac" id="DaD1RGs-DaD1R+GsaGTP+Gbg_id">
+        <Reactant specieID="DaD1RGs"                    />
+        <Product  specieID="DaD1R"                  />
+        <Product  specieID="GsaGTP"                  />
+        <Product  specieID="Gbg"                  />
+
+        <forwardRate> 0.15e-03        </forwardRate>
+        <reverseRate> 0.0           </reverseRate>
+    </Reaction>
+
+
+   
+   
+   
+
+
+</ReactionScheme>
+
+
+
+
+
+
+
+
+
+
+
+

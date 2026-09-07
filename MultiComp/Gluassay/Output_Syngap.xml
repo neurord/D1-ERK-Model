@@ -1,0 +1,66 @@
+
+ 
+<OutputScheme>
+
+  <!-- ===================== -->
+  <!-- FULL LIST: DEND -->
+  <!-- ===================== -->
+  <OutputSet filename="dend_full" region="dend" dt="2000.0">
+
+   <OutputSpecie name="Glu"/>
+    <OutputSpecie name="Gbuf"/>
+    <OutputSpecie name="GluGbuf"/>
+    <OutputSpecie name="GluOut"/>
+
+  </OutputSet>
+
+
+  <!-- ===================== -->
+  <!-- FULL LIST: NECK -->
+  <!-- (Same list as dend_full, but written to neck_full) -->
+  <!-- ===================== -->
+  <OutputSet filename="neck_full" region="neck" dt="2000.0">
+
+
+    <!-- same species list as dend_full -->
+        <OutputSpecie name="Glu"/>
+    <OutputSpecie name="Gbuf"/>
+    <OutputSpecie name="GluGbuf"/>
+    <OutputSpecie name="GluOut"/>
+
+  </OutputSet>
+
+
+  <!-- ===================== -->
+  <!-- FULL LIST: HEAD -->
+  <!-- ===================== -->
+  <OutputSet filename="head_full" region="head" dt="2000.0">
+
+       <OutputSpecie name="Glu"/>
+    <OutputSpecie name="Gbuf"/>
+    <OutputSpecie name="GluGbuf"/>
+    <OutputSpecie name="GluOut"/>
+
+  
+  </OutputSet>
+  
+
+
+  <!-- ===================== -->
+  <!-- FULL LIST: PSD -->
+  <!-- ===================== -->
+  <OutputSet filename="PSD_full" region="PSD" dt="2000.0">
+
+       <OutputSpecie name="Glu"/>
+    <OutputSpecie name="Gbuf"/>
+    <OutputSpecie name="GluGbuf"/>
+    <OutputSpecie name="GluOut"/>
+
+    
+  </OutputSet>
+
+
+ 
+
+</OutputScheme>
+

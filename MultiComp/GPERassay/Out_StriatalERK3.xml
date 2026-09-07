@@ -1,0 +1,51 @@
+
+ 
+<OutputScheme>
+
+  <!-- ===================== -->
+  <!-- FULL LIST: DEND -->
+  <!-- ===================== -->
+  <OutputSet filename="dend_full" region="dend" dt="100.0">
+
+      <OutputSpecie name="Da"/>
+      <OutputSpecie name="GsaGTP"/>
+      
+  </OutputSet>
+
+
+  <!-- ===================== -->
+  <!-- FULL LIST: NECK -->
+  <!-- (Same list as dend_full, but written to neck_full) -->
+  <!-- ===================== -->
+  <OutputSet filename="neck_full" region="neck" dt="100.0">
+
+    <!-- same species list as dend_full -->
+   
+      <OutputSpecie name="Da"/>
+      <OutputSpecie name="GsaGTP"/>
+      
+   
+
+  </OutputSet>
+
+
+  <!-- ===================== -->
+  <!-- FULL LIST: HEAD -->
+  <!-- ===================== -->
+  <OutputSet filename="head_full" region="head" dt="100.0">
+    <!-- same list as dend_full -->
+    
+      <OutputSpecie name="Da"/>
+      <OutputSpecie name="GsaGTP"/>
+      
+  </OutputSet>
+
+
+
+
+
+ 
+
+</OutputScheme>
+
+

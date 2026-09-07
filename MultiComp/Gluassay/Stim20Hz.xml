@@ -1,0 +1,18 @@
+<StimulationSet>
+
+    
+
+<!-- Train 1 -->
+<InjectionStim specieID="GluGbuf" injectionSite="sa1[0].pointA">
+        <onset>               10000          </onset>
+        <duration>            5              </duration>
+        <rate>                1.125           </rate>
+        <period>              50             </period>
+        <end>                 10999          </end>
+        <numTrains>           20             </numTrains>
+        <interTrainInterval>  9001          </interTrainInterval>   
+</InjectionStim>
+
+
+
+</StimulationSet>

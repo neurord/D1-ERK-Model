@@ -1,0 +1,81 @@
+
+ 
+<OutputScheme>
+
+  <!-- ===================== -->
+  <!-- FULL LIST: DEND -->
+  <!-- ===================== -->
+  <OutputSet filename="dend_full" region="dend" dt="100.0">
+
+      <OutputSpecie name="Da"/>
+      <OutputSpecie name="GsaGTP"/>
+      <OutputSpecie name="E2"/>
+      <OutputSpecie name="GPER"/>
+    <OutputSpecie name="E2GPER"/>
+      <OutputSpecie name="E2GPERGs"/>
+    <OutputSpecie name="GsGPER"/>
+<OutputSpecie name="AC5"/>
+
+<OutputSpecie name="AC5"/>
+<OutputSpecie name="AC5Gsa"/>
+<OutputSpecie name="AC5GsaATP"/>
+<OutputSpecie name="cAMP"/>
+  </OutputSet>
+
+
+  <!-- ===================== -->
+  <!-- FULL LIST: NECK -->
+  <!-- (Same list as dend_full, but written to neck_full) -->
+  <!-- ===================== -->
+  <OutputSet filename="neck_full" region="neck" dt="100.0">
+
+    <!-- same species list as dend_full -->
+   
+      <OutputSpecie name="Da"/>
+      <OutputSpecie name="GsaGTP"/>
+      <OutputSpecie name="E2"/>
+      <OutputSpecie name="GPER"/>
+    <OutputSpecie name="E2GPER"/>
+      <OutputSpecie name="E2GPERGs"/>
+    <OutputSpecie name="GsGPER"/>
+<OutputSpecie name="AC5"/>
+
+<OutputSpecie name="AC5"/>
+<OutputSpecie name="AC5Gsa"/>
+<OutputSpecie name="AC5GsaATP"/>
+<OutputSpecie name="cAMP"/>
+   
+
+  </OutputSet>
+
+
+  <!-- ===================== -->
+  <!-- FULL LIST: HEAD -->
+  <!-- ===================== -->
+  <OutputSet filename="head_full" region="head" dt="100.0">
+    <!-- same list as dend_full -->
+    
+      <OutputSpecie name="Da"/>
+      <OutputSpecie name="GsaGTP"/>
+      <OutputSpecie name="E2"/>
+      <OutputSpecie name="GPER"/>
+    <OutputSpecie name="E2GPER"/>
+      <OutputSpecie name="E2GPERGs"/>
+    <OutputSpecie name="GsGPER"/>
+<OutputSpecie name="AC5"/>
+
+<OutputSpecie name="AC5"/>
+<OutputSpecie name="AC5Gsa"/>
+<OutputSpecie name="AC5GsaATP"/>
+<OutputSpecie name="cAMP"/>
+  </OutputSet>
+
+
+
+
+
+ 
+
+</OutputScheme>
+
+

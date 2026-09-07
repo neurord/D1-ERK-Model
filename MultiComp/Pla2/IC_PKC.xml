@@ -1,0 +1,23 @@
+<InitialConditions>
+
+  <!-- ========================= -->
+  <!-- GLOBAL VOLUME SPECIES -->
+  <!-- ========================= -->
+  <ConcentrationSet>
+
+   
+   <NanoMolarity specieID="Ca" value="75" />
+   
+	 <NanoMolarity specieID="Pla2"       value="400"     />
+    <NanoMolarity specieID="APC"        value="30000"     />
+    <NanoMolarity specieID="AA"         value="0"     /> 
+	
+    
+    
+	
+  </ConcentrationSet>
+  
+ 
+
+</InitialConditions>
+

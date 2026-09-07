@@ -1,0 +1,73 @@
+<InitialConditions>
+  <ConcentrationSet>
+        <NanoMolarity specieID="Da" value="10"/>
+    <NanoMolarity specieID="Dbuf" value="0"/>
+    <NanoMolarity specieID="DaDbuf" value="0"/>
+    
+    
+    <NanoMolarity specieID="PDE4" value="271.6045" />
+    <NanoMolarity specieID="PDE4cAMP" value="5.45" />
+    <NanoMolarity specieID="pPDE4" value="16.0306" />
+    <NanoMolarity specieID="pPDE4cAMP" value="0.2555" />
+
+    <NanoMolarity specieID="PDE2" value="1346.6118" />
+    <NanoMolarity specieID="PDE2cAMP" value="3.9385" />
+    <NanoMolarity specieID="PDE2cAMP2" value="0.2342" />
+    
+    
+  </ConcentrationSet>
+  
+  
+  <SurfaceDensitySet region="dend">
+  
+  <PicoSD specieID="D1R" value="0.4843" /> 
+    <PicoSD specieID="DaD1R" value="0.0138" />
+    <PicoSD specieID="Gsabg" value="1654.8791" />
+    <PicoSD specieID="DaD1RGs" value="4.3174" />
+    <PicoSD specieID="GsD1R" value="196.5248" />    
+    <PicoSD specieID="GsaGDP" value="0.3459" />
+    <PicoSD specieID="GsaGTP" value="0.512" />
+    <PicoSD specieID="Gbg" value="2.9198" />
+
+    <PicoSD specieID="AC5" value="151.0675" />
+    <PicoSD specieID="AC5Gsa" value="2.3801" />
+    <PicoSD specieID="AC5GsaATP" value="20.909" />
+    <PicoSD specieID="AC5Ca" value="0.0" />
+    <PicoSD specieID="AC5GsaCa" value="0.0" />
+    <PicoSD specieID="AC5GsaCaATP" value="0.0" />
+
+    <PicoSD specieID="PDE10" value="352"/>
+    <PicoSD specieID="PDE10cAMP" value="60"/>
+   
+    <PicoSD specieID="pPDE10" value="20"/>
+    
+    <PicoSD specieID="pPDE10cAMP" value="10"/>
+    
+    </SurfaceDensitySet>
+  
+  
+  
+  <ConcentrationSet region="head">
+  
+  <NanoMolarity specieID="D1R" value="100"/>
+    <NanoMolarity specieID="DaD1R" value="0"/>
+    <NanoMolarity specieID="Gsabg" value="1680"/>
+    <NanoMolarity specieID="GsD1R" value="100"/>
+    <NanoMolarity specieID="DaD1RGs" value="0"/>
+    <NanoMolarity specieID="GsaGTP" value="0"/>
+    <NanoMolarity specieID="GsaGDP" value="0"/>
+    <NanoMolarity specieID="Gbg" value="0"/>
+    <NanoMolarity specieID="AC5" value="818.22" />
+    <NanoMolarity specieID="AC5Gsa" value="2.3785" />
+    <NanoMolarity specieID="AC5GsaATP" value="11.8927" />
+    
+    <NanoMolarity specieID="PDE10" value="871.3409" /> 
+    <NanoMolarity specieID="PDE10cAMP" value="229.1333" />
+   
+    <NanoMolarity specieID="pPDE10" value="114.1702" />  
+    
+    <NanoMolarity specieID="pPDE10cAMP" value="33.2997" />
+        </ConcentrationSet>
+  
+  
+</InitialConditions>

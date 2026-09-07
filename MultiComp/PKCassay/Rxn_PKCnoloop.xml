@@ -1,0 +1,874 @@
+
+
+ <ReactionScheme>
+ 
+    
+    
+ <Specie name="ERK"                                 id="ERK"                 kdiff="7"    kdiffunit="mu2/s"/>
+ <Specie name="ERKpY"                                id="ERKpY"                kdiff="7"    kdiffunit="mu2/s"/>
+ <Specie name="ERKpT"                                id="ERKpT"                kdiff="7"    kdiffunit="mu2/s"/>
+ <Specie name="ppERK"                               id="ppERK"                kdiff="7"    kdiffunit="mu2/s"/>
+ 
+    <Specie name="Pkc"          	  id="Pkc"           kdiff="6.61"    kdiffunit="mu2/s"/>
+    <Specie name="PkcCa"      	 	   id="PkcCa"         kdiff="6.61"    kdiffunit="mu2/s"/>   
+    <Specie name="PkcCaRaf1"      	 	   id="PkcCaRaf1"         kdiff="0"    kdiffunit="mu2/s"/>
+    <Specie name="PkcCaDagAA"   	    id="PkcCaDagAA"      kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="PkcCaDagAARaf1"       id="PkcCaDagAARaf1"      kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="PkcCaDag"   		    id="PkcCaDag"      kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="PkcDagAA"   	    id="PkcDagAA"      kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="PkcDag"   	    id="PkcDag"      kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="PkcDagAARaf1"       id="PkcDagAARaf1"      kdiff="0"     kdiffunit="mu2/s"/>
+    
+    <Specie name="Pla2"          	  id="Pla2"           kdiff="0"    kdiffunit="mu2/s"/>
+    <Specie name="Pla2ac"            id="Pla2ac"           kdiff="0"    kdiffunit="mu2/s"/>
+    <Specie name="Pla2acAPC"            id="Pla2acAPC"           kdiff="0"    kdiffunit="mu2/s"/>
+    <Specie name="Pla2Ca"            id="Pla2Ca"           kdiff="0"    kdiffunit="mu2/s"/>
+    <Specie name="pPla2acAPC"            id="pPla2acAPC"           kdiff="0"    kdiffunit="mu2/s"/>
+    <Specie name="pPla2ac"            id="pPla2ac"           kdiff="0"    kdiffunit="mu2/s"/>
+    
+    
+    <Specie name="ppERKPla2"            id="ppERKPla2"           kdiff="0"    kdiffunit="mu2/s"/>
+    <Specie name="ppERKPla2ac"            id="ppERKPla2ac"           kdiff="0"    kdiffunit="mu2/s"/>
+    
+    <Specie name="APC"            id="APC"           kdiff="0"    kdiffunit="mu2/s"/>
+  
+    
+    <Specie name="AA"            id="AA"           kdiff="0"    kdiffunit="mu2/s"/>
+     <Specie name="Dag"            id="Dag"           kdiff="0"    kdiffunit="mu2/s"/>
+      
+    
+	 
+    <Specie name="Raf1" 		id="Raf1"                                             kdiff="0"    kdiffunit="mu2/s"/>
+    <Specie name="pRaf1"		 id="pRaf1"                                 kdiff="0"    kdiffunit="mu2/s"/>
+    <Specie name="RasGTP"		 id="RasGTP"                                 kdiff="0"    kdiffunit="mu2/s"/>
+    
+
+    <Specie name="pRaf1Ras"		 id="pRaf1Ras"                                 kdiff="0"    kdiffunit="mu2/s"/>
+    <Specie name="Raf1Ras"		 id="Raf1Ras"                                 kdiff="0"    kdiffunit="mu2/s"/>
+    <Specie name="PP2A"            id="PP2A"           kdiff="0"    kdiffunit="mu2/s"/>
+    <Specie name="PP2ApRaf1"            id="PP2ApRaf1"           kdiff="0"    kdiffunit="mu2/s"/>
+    
+    
+    <Specie name="pPla2acPP2A"            id="pPla2acPP2A"           kdiff="0"    kdiffunit="mu2/s"/>
+    <Specie name="pMEKPP2A"                          id="pMEKPP2A"                kdiff="7"    kdiffunit="mu2/s"/>
+    <Specie name="ppMEKPP2A"                         id="ppMEKPP2A"                kdiff="7"    kdiffunit="mu2/s"/>
+
+    <Specie name="PkcCaDagRaf1"       id="PkcCaDagRaf1"      kdiff="0"     kdiffunit="mu2/s"/>
+   
+    <Specie name="Raf1RasMEK" id="Raf1RasMEK"                       kdiff="0"    kdiffunit="mu2/s"/>
+    <Specie name="Raf1RaspMEK" id="Raf1RaspMEK"                     kdiff="0"    kdiffunit="mu2/s"/>
+	
+    <Specie name="pRaf1RasMEK" id="pRaf1RasMEK"                       kdiff="0"    kdiffunit="mu2/s"/>
+    <Specie name="pRaf1RaspMEK" id="pRaf1RaspMEK"                     kdiff="0"    kdiffunit="mu2/s"/>
+	
+   
+    <Specie name="Ca"             id="Ca"            kdiff="174.3" kdiffunit="mu2/s"/>
+  
+    <Specie name="MEK"                               id="MEK"                kdiff="7"    kdiffunit="mu2/s"/>
+    <Specie name="pMEK"                              id="pMEK"                kdiff="7"    kdiffunit="mu2/s"/>
+    <Specie name="ppMEK"                             id="ppMEK"                kdiff="7"    kdiffunit="mu2/s"/>
+    <Specie name="MKP1"                                id="MKP1"                kdiff="7"    kdiffunit="mu2/s"/>
+    <Specie name="pERKMKP1"                            id="pERKMKP1"                kdiff="7"    kdiffunit="mu2/s"/>
+    <Specie name="ppERKMKP1"                           id="ppERKMKP1"                kdiff="7"    kdiffunit="mu2/s"/>
+	
+    <Specie name="ppMEKERK"                          id="ppMEKERK"                kdiff="0"    kdiffunit="mu2/s"/>
+    <Specie name="ppMEKpERK"                         id="ppMEKpERK"                kdiff="0"    kdiffunit="mu2/s"/>
+
+	
+
+	<Specie name="dRaf1Ras" id="dRaf1Ras"                                 kdiff="0"    kdiffunit="mu2/s"/>
+	<Specie name="dRaf1RasMEK" id="dRaf1RasMEK"                       kdiff="0"    kdiffunit="mu2/s"/>
+	<Specie name="dRaf1RaspMEK" id="dRaf1RaspMEK"                     kdiff="0"    kdiffunit="mu2/s"/>
+
+	
+	<Specie name="dpRaf1Ras" id="dpRaf1Ras"                                 kdiff="0"    kdiffunit="mu2/s"/>
+	<Specie name="dpRaf1RasMEK" id="dpRaf1RasMEK"                       kdiff="0"    kdiffunit="mu2/s"/>
+	<Specie name="dpRaf1RaspMEK" id="dpRaf1RaspMEK"                     kdiff="0"    kdiffunit="mu2/s"/>
+
+	
+	
+	<Specie name="RasGDP" id="RasGDP"                                         kdiff="0"    kdiffunit="mu2/s"/>
+	<Specie name="rasGap" id="rasGap"                                         kdiff="0"    kdiffunit="mu2/s"/>
+	<Specie name="RasGTPGap" id="RasGTPGap"                                   kdiff="0"    kdiffunit="mu2/s"/>
+	
+	<Specie name="pmca"              id="pmca"              kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="ncx"               id="ncx"               kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="pmcaCa"            id="pmcaCa"            kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="ncxCa" id="ncxCa" kdiff="0" kdiffunit="mu2/s"/>
+<Specie name="CaOutLeak"      id="CaOutLeak"     kdiff="0"     kdiffunit="mu2/s"/>
+    <Specie name="Leak"           id="Leak"          kdiff="0"     kdiffunit="mu2/s"/>
+
+
+
+<Specie name="CaOut"          id="CaOut"         kdiff="174.3" kdiffunit="mu2/s"/>
+  <Specie name="Calbin"         id="Calbin"        kdiff="9.3"   kdiffunit="mu2/s"/>
+    <Specie name="CalbinC"        id="CalbinC"       kdiff="9.3"   kdiffunit="mu2/s"/>
+
+<Specie name="Cam"               id="Cam"               kdiff="11"    kdiffunit="mu2/s"/>
+    <Specie name="CamCa2C"           id="CamCa2C"           kdiff="11"    kdiffunit="mu2/s"/>
+    <Specie name="CamCa2N"           id="CamCa2N"           kdiff="11"    kdiffunit="mu2/s"/>
+	<Specie name="CamCa4"           id="CamCa4"           kdiff="11"    kdiffunit="mu2/s"/>
+	
+	<Specie name="RasGRF" id="RasGRF"                             kdiff="0"    kdiffunit="mu2/s"/>
+	<Specie name="CamCa4GRF" id="CamCa4GRF"                             kdiff="0"    kdiffunit="mu2/s"/>
+	<Specie name="CamCa4GRFRas" id="CamCa4GRFRas"                 kdiff="0"    kdiffunit="mu2/s"/>
+
+   
+    
+    
+    
+
+ <!--I. *********** Ca pump and buffer rxns  ************* -->
+<!-- i: Ca pump high affinity -    Ca + pmca <-> pmcaCa  SAME-->
+    <Reaction name = "Ca_pump1a" id="Ca_pump1a">
+	<Reactant specieID="Ca"/>
+	<Reactant specieID="pmca"/>
+	<Product specieID="pmcaCa"/>
+
+	<forwardRate>0.05e-3</forwardRate>
+	<reverseRate>9e-3</reverseRate>
+    </Reaction>
+
+<!-- ii: Ca pump high affinity -    pmcaCa <-> pmca + CaOut   SAME-->
+    <Reaction name = "Ca_pump1b" id="Ca_pump1b">
+	<Reactant specieID="pmcaCa"/>
+	<Product specieID="pmca"/>
+	<Product specieID="CaOut"/>
+
+	<forwardRate>3.0e-3</forwardRate>
+	<reverseRate>0</reverseRate>
+    </Reaction>
+
+<!-- iii: Ca pump low affinity -    Ca + ncx <-> ncxCa  SAME-->
+    <Reaction name = "Ca_pump2a" id="Ca_pump2a">
+	<Reactant specieID="Ca"/>
+	<Reactant specieID="ncx"/>
+	<Product specieID="ncxCa"/>
+
+	<forwardRate>0.011e-3</forwardRate>
+	<reverseRate>11.2e-3</reverseRate>
+    </Reaction>
+
+<!-- iv: Ca pump low affinity -    ncxCa <-> ncx + CaOut   SAME-->
+    <Reaction name = "Ca_pump2b" id="Ca_pump2b">
+	<Reactant specieID="ncxCa"/>
+	<Product specieID="ncx"/>
+	<Product specieID="CaOut"/>
+
+	<forwardRate>5.6e-3</forwardRate>
+	<reverseRate>0</reverseRate>
+    </Reaction>
+<!-- v: Ca leak -    CaOut + Leak <-> CaOutLeak  GQ RXN FILE, Leak is sm only-->
+    <Reaction name = "Ca_leak" id="Ca_leak">
+	<Reactant specieID="CaOut"/>
+	<Reactant specieID="Leak"/>
+	<Product specieID="CaOutLeak"/>
+
+        <forwardRate>0.01e-6</forwardRate>
+	<reverseRate>0</reverseRate>
+    </Reaction>
+
+<!-- vi: Ca leak -    CaOutLeak <-> Ca (inside) + Leak  -->
+    <Reaction name = "Ca_leak" id="Ca_leak">
+	<Reactant specieID="CaOutLeak"/>
+	<Product specieID="Ca"/>
+	<Product specieID="Leak"/>
+
+        <forwardRate>0.65e-3</forwardRate>  <!-- 1.1e-3 -->
+	<reverseRate>0</reverseRate>
+    </Reaction>
+
+<!-- vii: Ca Buffer    Ca + Calbindin <-> calbinC  SAME-->
+    <Reaction name = "Ca_buffer" id="Ca_Buffer">
+        <Reactant specieID="Ca"/>
+        <Reactant specieID="Calbin"/>
+        <Product specieID="CalbinC"/>
+
+        <forwardRate>0.028e-3</forwardRate>
+        <reverseRate>19.6</reverseRate>
+    </Reaction>
+
+
+
+<Reaction name = "DaDbuf-Da+Dbuf" id="DaDbuf-Da+Dbuf">
+        <Product  specieID="Ca"                     />
+        <forwardRate> 5e-5 </forwardRate>
+        <reverseRate> 1e-6      </reverseRate>
+    </Reaction>
+	
+ <Reaction name = "DaDbuf--Da+Dbuf" id="DaDbuf--Da+Dbuf">
+        <Product  specieID="Dag"                     />
+        <forwardRate> 1e-2 </forwardRate>
+        <reverseRate> 1e-6      </reverseRate>
+    </Reaction>
+    
+
+
+
+
+<Reaction name = "PkcCa+Dag--PkcCaDag" id="PkcCa+Dag--PkcCaDag">
+        <Reactant specieID="Pkc"               />
+        <Reactant specieID="Dag"             />
+        <Product  specieID="PkcDag"            />
+
+        <forwardRate> 0.06e-6    </forwardRate> <!--reducing by 10x, original 0.6e-6 -->
+        <reverseRate>  0.1e-3   </reverseRate> 
+    </Reaction>
+    
+    
+    
+  <Reaction name = "PkcCa+Dag--PkcCaDag" id="PkcCa+Dag--PkcCaDag">
+        <Reactant specieID="PkcDag"               />
+        <Reactant specieID="AA"             />
+        <Product  specieID="PkcDagAA"            />
+
+        <forwardRate> 0.018e-3   </forwardRate> <!--increased 100x-->
+        <reverseRate>  2e-3   </reverseRate>
+    </Reaction>
+    
+    <Reaction name = "PkcCaDagAA+Raf1--PkcCaDagRaf1" id="PkcCaDagAA+Raf1--PkcCaDagAARaf1">
+        <Reactant specieID="PkcDagAA"           />		
+        <Reactant  specieID="Raf1"               />
+        <Product  specieID="PkcDagAARaf1"               />
+
+        <forwardRate> 0.02e-2   </forwardRate>  <!--(Original 0.02e-3 Upi)-->
+	<reverseRate> 1.068e-3   </reverseRate>
+		
+    </Reaction>
+
+	<Reaction name = "PkcCaDagRaf1--PkcCaDag+Raf1Ras" id="PkcCaDagAARaf1--PkcCaDagAA--pRaf1">
+        <Reactant specieID="PkcDagAARaf1"           />
+        <Product  specieID="pRaf1"               />
+        <Product  specieID="PkcDagAA"               />
+
+        <forwardRate>  0.267e-3  </forwardRate>
+	<reverseRate> 0   </reverseRate>
+
+  </Reaction>	
+
+
+
+
+
+
+<!--Adding the PKC loop of ERK activation from Bhallas paper
+
+The rxns added are PKC activation of Raf1,ppERK activating pla2 which in turn activates apc to arichadonic acid.Now AA activates pkc-->
+           
+	<!-- (Raf1 binds to Ras, step 1) RasGTP + Raf1 <-> RasGTPRaf1 -->
+    
+    
+	 <Reaction name = "APC+Pla2ac--Pla2acAPC" id="APC+Pla2ac--Pla2acAPC">
+        <Reactant specieID="Pla2ac"           />
+        <Reactant  specieID="APC"               />
+        <Product  specieID="Pla2acAPC"               />
+
+        <forwardRate> 0.001e-3  </forwardRate>
+	<reverseRate> 0.002   </reverseRate>
+		
+    </Reaction>
+
+     <Reaction name = "Pla2acAPC--AA+pla2ac" id="Pla2acAPC--AA+pla2ac">
+        <Reactant specieID="Pla2acAPC"           />
+        <Product  specieID="AA"               />
+        <Product  specieID="Pla2ac"               />
+
+        <forwardRate>  0.003e-1  </forwardRate>  <!--My AA is very unstable,need to fix this original rate is 0.003, made it 0.003e-2 to reduce fluctuations??-->
+	<reverseRate> 0   </reverseRate>
+		
+    </Reaction>
+    
+
+    
+
+
+    <Reaction name = "APC+Pla2ac--Pla2acAPC" id="APC+Pla2ac--Pla2acAPC">
+        <Reactant specieID="pPla2ac"           />
+        <Reactant  specieID="APC"               />
+        <Product  specieID="pPla2acAPC"               />
+
+        <forwardRate> 0.001e-3   </forwardRate>
+	<reverseRate> 0.002   </reverseRate>
+		
+    </Reaction>
+
+     <Reaction name = "pPla2acAPC--AA+pla2ac" id="pPla2acAPC--AA+pla2ac">
+        <Reactant specieID="pPla2acAPC"           />
+        <Product  specieID="AA"               />
+        <Product  specieID="pPla2ac"               />
+
+        <forwardRate>  0.012e-1  </forwardRate>   <!--My AA is very unstable,need to fix this original rate is 0.012, made it 0.012e-2 to reduce fluctuations??-->
+	<reverseRate> 0   </reverseRate>
+		
+    </Reaction>
+    
+    <!-- These are values from Hellgren Kotaleski PKC paper. 2.5 uM affinity -->
+    <!-- Pkc + Ca    <->   PkcCa  -->
+    <Reaction name = "Pkc+Ca--PkcCa" id="Pkc+Ca--PkcCa">
+        <Reactant specieID="Ca"           />
+        <Reactant specieID="Pkc"              />
+        <Product  specieID="PkcCa"               />
+
+        <forwardRate> 0.020e-03   </forwardRate>
+        <reverseRate> 50e-03        </reverseRate>
+    </Reaction>
+ 
+<!-- THese are values from Hellgren Kotaleski PKC paper. 10 uM affinity
+MUCH slower binding compared to CaDgl  -->
+   <!-- PkcCa + Dag    <-> PkcCaDag    -->
+    <Reaction name = "PkcCa+Dag--PkcCaDag" id="PkcCa+Dag--PkcCaDag">
+        <Reactant specieID="PkcCa"               />
+        <Reactant specieID="Dag"             />
+        <Product  specieID="PkcCaDag"            />
+
+        <forwardRate> 0.015e-05   </forwardRate>
+        <reverseRate>  0.15e-03   </reverseRate>
+    </Reaction>
+
+    
+    					
+     <Reaction name = "AA+PkcCaDag--PkcCaAADag" id="AA+PkcCaDag--PkcCaAADag">
+        <Reactant specieID="PkcCaDag"           />
+        <Reactant  specieID="AA"               />
+        <Product  specieID="PkcCaDagAA"               />     <!--Jeanette persistentPKC -->
+
+        <forwardRate> 0.001e-5   </forwardRate>
+	<reverseRate> 0.02e-3   </reverseRate>
+		
+    </Reaction>
+
+
+    
+    
+    
+    
+ 
+	<Reaction name = "PkcCaDagAA+Raf1--PkcCaDagRaf1" id="PkcCaDagAA+Raf1--PkcCaDagAARaf1">
+        <Reactant specieID="PkcCaDagAA"           />		
+        <Reactant  specieID="Raf1"               />
+        <Product  specieID="PkcCaDagAARaf1"               />
+
+        <forwardRate> 0.02e-2   </forwardRate>  <!--(Original 0.02e-3,,,Last run 0.02e-2)-->
+	<reverseRate> 1.068e-3   </reverseRate>
+		
+    </Reaction>
+
+	<Reaction name = "PkcCaDagRaf1--PkcCaDag+Raf1Ras" id="PkcCaDagAARaf1--PkcCaDagAA--pRaf1">
+        <Reactant specieID="PkcCaDagAARaf1"           />
+        <Product  specieID="pRaf1"               />
+        <Product  specieID="PkcCaDagAA"               />
+
+        <forwardRate>  0.267e-3  </forwardRate>
+	<reverseRate> 0   </reverseRate>
+
+  </Reaction>	
+	
+<Reaction name = "PkcCaDag+Raf1--PkcCaDagRaf1" id="PkcCaDag+Raf1--PkcCaDagAARaf1">
+        <Reactant specieID="PkcCaDag"           />		
+        <Reactant  specieID="Raf1"               />
+        <Product  specieID="PkcCaDagRaf1"               />
+
+        <forwardRate> 0.02e-4   </forwardRate>  <!--(Original 0.02e-3,,,Last run 0.02e-4)-->
+	<reverseRate> 1.068e-3   </reverseRate>
+		
+    </Reaction>
+
+	<Reaction name = "PkcCaDagRaf1--PkcCaDag+Raf1Ras" id="PkcCaDagAARaf1--PkcCaDagAA--pRaf1">
+        <Reactant specieID="PkcCaDagRaf1"           />
+        <Product  specieID="pRaf1"               />
+        <Product  specieID="PkcCaDag"               />
+
+        <forwardRate>  0.267e-3  </forwardRate>
+	<reverseRate> 0   </reverseRate>
+
+  </Reaction>	
+  
+
+
+
+ 
+   	
+   	
+   	
+
+  <Reaction name="PP2A+pRaf1-- PP2ApRaf1" id="PP2A+pRaf1-- PP2ApRaf1">
+	<Reactant specieID="PP2A"           />
+        <Reactant specieID="pRaf1"               />
+        <Product  specieID="PP2ApRaf1"               />
+
+        <forwardRate> 0.1475e-4  </forwardRate> <!--  was upi but this is gallimore -->
+	<reverseRate> 1.86e-3   </reverseRate> <!---->
+  </Reaction>	
+
+   <Reaction name="PP2ApRaf1-- Raf1" id="PP2ApRaf1-- Raf1">
+	<Reactant specieID="PP2ApRaf1"           />
+        <Product  specieID="Raf1"               />
+        <Product  specieID="PP2A"               />
+
+        <forwardRate>  0.446e-3  </forwardRate> <!--0.446e-3-->
+	<reverseRate> 0   </reverseRate>
+      
+
+</Reaction>
+     
+    
+    
+    
+   
+
+     <Reaction name = "Pla2+Ca--Pla2Ca" id="Pla2+Ca--Pla2Ca">
+        <Reactant specieID="Pla2"           />
+        <Reactant  specieID="Ca"               />
+	<Product  specieID="Pla2Ca"  />
+	
+        <forwardRate> 0.0177e-3   </forwardRate>
+	<reverseRate> 0.1545   </reverseRate>
+		
+    </Reaction>
+
+    <Reaction name = "Pla2Ca+Ca--Pla2Ca" id="Pla2Ca+Ca--Pla2Ca">
+        <Reactant specieID="Pla2Ca"           />
+        <Reactant  specieID="Ca"               />
+        <Product  specieID="Pla2ac"               />     <!--Ca binding to Pla2 ,Gallimore Cell report-->
+
+        <forwardRate> 0.0163e-3   </forwardRate>
+	<reverseRate> 0.101   </reverseRate>
+	
+	
+    </Reaction>
+	<!-- RasGTP activates Raf1 -->
+    
+    <!-- (Raf1 binds to Ras, step 1) RasGTP + Raf1 <-> RasGTPRaf1 -->
+    <Reaction name = "RasGTP+Raf1--Raf1RasGTP" id="RasGTP+Raf1--Raf1Ras">
+        <Reactant specieID="RasGTP"           />
+        <Reactant  specieID="Raf1"               />
+        <Product  specieID="Raf1Ras"               />
+
+	<forwardRate> 0.06e-3   </forwardRate> <!-- 0.06e-3 is Nadias Rates,but Upi uses 0.006e-3 HAVE A LOOK AT THIS RATE AGN,might hv messed up conversion,im using 0.006-->
+	<reverseRate> 1e-3   </reverseRate>	<!-- 1e-3 is original rate but i modified it to 10e-3 -->
+	
+    </Reaction>
+
+    <!-- RasGTP activates pRaf1 -->
+    
+    <!-- (Raf1 binds to Ras, step 1) RasGTP + Raf1 <-> RasGTPRaf1 -->
+    <Reaction name = "Ras+pRaf1--pRaf1RasGTP" id="RasGTP+pRaf1--pRaf1Ras">
+        <Reactant specieID="RasGTP"           />
+        <Reactant  specieID="pRaf1"               />
+        <Product  specieID="pRaf1Ras"               />
+
+        <forwardRate> 0.6e-3   </forwardRate>	<!--Upis Rates are kf= 60,Kb=0.5//My tweaked rates are Kf=1e-3 and Kb=5e-3-->
+	<reverseRate> 0.5e-3   </reverseRate>    
+	
+    </Reaction>
+    
+    
+   
+    
+    
+    
+    
+    
+   <Reaction name = "AA -> " id = "AA -> NULL">
+    	<Reactant specieID="AA"		/>
+	<Product specieID="APC"/>
+	<forwardRate> 0.4e-4 </forwardRate>  <!-- 0.4e-6 last run value,still reducing slightly-->
+	<reverseRate>0</reverseRate>
+	
+    </Reaction>
+       
+     
+   <Reaction name="PP2A+pPla2ac--Pla2ac" id="PP2A+pPla2ac--Pla2ac">
+   <Reactant specieID="pPla2ac"/>
+   <Reactant specieID="PP2A"/>
+   <Product specieID="pPla2acPP2A"/>
+
+   <forwardRate>1e-6</forwardRate>
+   <reverseRate>1.4e-3</reverseRate>
+   </Reaction>
+
+ <Reaction name="PP2A+pPla2ac--Pla2ac" id="PP2A+pPla2ac--Pla2ac">
+  <Reactant specieID="pPla2acPP2A"/>
+  <Product specieID="PP2A"/>
+  <Product specieID="Pla2ac"/>
+
+  <forwardRate>0.8e-3</forwardRate>
+  <reverseRate>0</reverseRate>
+  </Reaction>
+
+     
+     
+     <Reaction name = "Raf1Ras+Raf1Ras--2Raf1RasGTP" id="Raf1Ras+Raf1Ras--2Raf1RasGTP">
+        <Reactant specieID="Raf1Ras"      n="2"     />
+        <Product  specieID="dRaf1Ras"               />
+
+        <forwardRate> 0.02e-3   </forwardRate> <!-- 0.02e-3 is nadia rate Raf1Ras dimers-->	
+	<reverseRate> 0.5e-3   </reverseRate>
+	
+      </Reaction>
+      
+      
+      <!-- (pRaf1Ras dimerize) RasGTPpRaf1*2 <-> dpRasGTPRaf1 -->
+    <Reaction name = "pRaf1Ras+pRaf1Ras--2pRaf1RasGTP" id="pRaf1Ras+pRaf1Ras--2pRaf1RasGTP">
+        <Reactant specieID="pRaf1Ras"      n="2"     />
+        <Product  specieID="dpRaf1Ras"               />
+
+        <forwardRate> 0.02e-3   </forwardRate> <!-- pRaf1Ras dimer same rate of formation as raf1ras dimer,previously i did use 10x dimer-->
+	<reverseRate> 0.5e-3   </reverseRate>
+	
+      </Reaction>
+
+
+      
+
+
+     
+     
+     
+     
+     
+     
+     
+     
+     <!--ERK ACTIVATION BY ppMAPKK-->
+
+
+    <!--ERK ACTIVATION BY ppMAPKK (Included two sites for ERK phosphorylation Y and T)-->
+
+
+    <!--(ERK phos by ppMAPKK) ppMAPKK+ERK <-> ppMAPKKERK <-> pERK+ppMAPKK-->
+    <Reaction name = "ppMAPKK+ERK--ppMAPKKERK" id="ppMAPKK+ERK--ppMAPKKERK">
+        <Reactant specieID="ppMEK"           />
+        <Reactant specieID="ERK"              />
+        <Product  specieID="ppMEKERK"               />
+
+        <forwardRate> 0.032e-3   </forwardRate>
+        <reverseRate> 1.200e-3   </reverseRate>
+      
+    </Reaction>
+    
+    <Reaction name = "ppMEKERK--pERK+ppMAPKK" id="ppMAPKKERK--pERK+ppMAPKK">
+        <Reactant specieID="ppMEKERK"           />
+        <Product  specieID="ERKpY"               />
+        <Product  specieID="ppMEK"               />
+
+        <forwardRate> 0.3e-3   </forwardRate>
+        <reverseRate> 0        </reverseRate>
+      
+    </Reaction>
+    
+    <!--(ERK phos by ppMAPKK) ppMAPKK+ERK <-> ppMAPKKERK <-> pERK+ppMAPKK-->
+    <Reaction name = "ppMAPKK+ERK--ppMAPKKERK" id="ppMAPKK+ERK--ppMAPKKERK">
+        <Reactant specieID="ppMEK"           />
+        <Reactant specieID="ERK"              />
+        <Product  specieID="ppMEKERK"               />
+
+        <forwardRate> 0.032e-3   </forwardRate>
+        <reverseRate> 1.200e-3   </reverseRate>
+      
+    </Reaction>
+    
+    <Reaction name = "ppMEKERK--pERK+ppMAPKK" id="ppMAPKKERK--pERK+ppMAPKK">
+        <Reactant specieID="ppMEKERK"           />
+        <Product  specieID="ERKpT"               />
+        <Product  specieID="ppMEK"               />
+
+        <forwardRate> 0.3e-3   </forwardRate>
+        <reverseRate> 0        </reverseRate>
+      
+    </Reaction>
+
+
+
+
+    
+<!--(pERK phos by ppMAPKK) ppMAPKK+pERK <-> ppMAPKKpERK <-> ppERK+ppMAPKK-->
+    <Reaction name = "ppMAPKK+pERK--ppMAPKKpERK" id="ppMAPKK+pERK--ppMAPKKpERK">
+        <Reactant specieID="ppMEK"           />
+        <Reactant specieID="ERKpY"              />
+        <Product  specieID="ppMEKpERK"               />
+
+       <forwardRate> 0.032e-3   </forwardRate>
+       <reverseRate> 1.200e-3   </reverseRate>
+      
+    </Reaction>
+    <Reaction name = "ppMAPKKpERK--ppERK+ppMAPKK" id="ppMAPKKpERK--ppERK+ppMAPKK">
+        <Reactant specieID="ppMEKpERK"           />
+        <Product specieID="ppERK"              />
+        <Product  specieID="ppMEK"               />
+
+       <forwardRate> 0.3e-3   </forwardRate>
+       <reverseRate> 0        </reverseRate>
+      
+    </Reaction>
+    
+
+<!--(pERK phos by ppMAPKK) ppMAPKK+pERK <-> ppMAPKKpERK <-> ppERK+ppMAPKK-->
+    <Reaction name = "ppMAPKK+pERK--ppMAPKKpERK" id="ppMAPKK+pERK--ppMAPKKpERK">
+        <Reactant specieID="ppMEK"           />
+        <Reactant specieID="ERKpT"              />
+        <Product  specieID="ppMEKpERK"               />
+
+       <forwardRate> 0.032e-3   </forwardRate>
+       <reverseRate> 1.200e-3   </reverseRate>
+      
+    </Reaction>
+    <Reaction name = "ppMAPKKpERK--ppERK+ppMAPKK" id="ppMAPKKpERK--ppERK+ppMAPKK">
+        <Reactant specieID="ppMEKpERK"           />
+        <Product specieID="ppERK"              />
+        <Product  specieID="ppMEK"               />
+
+       <forwardRate> 0.3e-3   </forwardRate>
+       <reverseRate> 0        </reverseRate>
+      
+    </Reaction>
+    
+    
+<!--ERK INACTIVATION BY MKP1 and STEP -->
+
+<!--(ppERK dephos by MKP1) ppERK+MKP1<-> ppERKMKP1 <-> pERK+MKP1-->
+    <Reaction name = "ppERK+MKP1--ppERKMKP1" id="ppERK+MKP1--ppERKMKP1">
+        <Reactant specieID="ppERK"           />
+        <Reactant specieID="MKP1"              />
+        <Product  specieID="ppERKMKP1"               />
+
+        <forwardRate> 0.150e-3  </forwardRate>
+        <reverseRate> 16e-3  </reverseRate>
+        
+    </Reaction>
+    <Reaction name = "ppERKMKP1--pERK+MKP1" id="ppERKMKP1--pERK+MKP1">
+        <Reactant specieID="ppERKMKP1"           />
+        <Product  specieID="ERKpY"               />
+        <Product  specieID="MKP1"               />
+
+        <forwardRate> 4e-3  </forwardRate>
+        <reverseRate> 0  </reverseRate>
+        
+    </Reaction>
+<!--(ppERK dephos by MKP1) ppERK+MKP1<-> ppERKMKP1 <-> pERK+MKP1-->
+    <Reaction name = "ppERK+MKP1--ppERKMKP1" id="ppERK+MKP1--ppERKMKP1">
+        <Reactant specieID="ppERK"           />
+        <Reactant specieID="MKP1"              />
+        <Product  specieID="ppERKMKP1"               />
+
+        <forwardRate> 0.150e-3  </forwardRate>
+        <reverseRate> 16e-3  </reverseRate>
+        
+    </Reaction>
+    <Reaction name = "ppERKMKP1--pERK+MKP1" id="ppERKMKP1--pERK+MKP1">
+        <Reactant specieID="ppERKMKP1"           />
+        <Product  specieID="ERKpT"               />
+        <Product  specieID="MKP1"               />
+
+        <forwardRate> 4e-3  </forwardRate>
+        <reverseRate> 0  </reverseRate>
+        
+    </Reaction>
+
+
+
+
+
+<!--(pERK dephos by MKP1) pERK+MKP1<-> pERKMKP1 <-> ERK+MKP1-->
+    <Reaction name = "pERK+MKP1--pERKMKP1" id="pERK+MKP1--pERKMKP1">
+        <Reactant specieID="ERKpY"           />
+        <Reactant specieID="MKP1"              />
+        <Product  specieID="pERKMKP1"               />
+
+        <forwardRate> 0.150e-3  </forwardRate>
+        <reverseRate> 16e-3  </reverseRate>
+        
+       
+    </Reaction>
+    <Reaction name = "pERKMKP1--ERK+MKP1" id="pERKMKP1--ERK+MKP1">
+        <Reactant specieID="pERKMKP1"           />
+        <Product  specieID="ERK"               />
+        <Product  specieID="MKP1"               />
+
+        <forwardRate> 4e-3   </forwardRate>
+        <reverseRate> 0   </reverseRate>
+       
+       </Reaction>
+
+    <!--(pERK dephos by MKP1) pERK+MKP1<-> pERKMKP1 <-> ERK+MKP1-->
+    <Reaction name = "pERK+MKP1--pERKMKP1" id="pERK+MKP1--pERKMKP1">
+        <Reactant specieID="ERKpT"           />
+        <Reactant specieID="MKP1"              />
+        <Product  specieID="pERKMKP1"               />
+
+        <forwardRate> 0.150e-3  </forwardRate>
+        <reverseRate> 16e-3  </reverseRate>
+        
+       
+    </Reaction>
+    <Reaction name = "pERKMKP1--ERK+MKP1" id="pERKMKP1--ERK+MKP1">
+        <Reactant specieID="pERKMKP1"           />
+        <Product  specieID="ERK"               />
+        <Product  specieID="MKP1"               />
+
+        <forwardRate> 4e-3   </forwardRate>
+        <reverseRate> 0   </reverseRate>
+       
+       </Reaction>
+
+       
+   
+ 
+
+
+     
+     
+     
+      <!--MAPKK ACTIVATION BY Raf1 and praf1rasgtp (dimer)-->
+    
+<!--(MAPKK phos by Raf1RasGTP) MAPKK + Raf1RasGTP <-> Raf1RasGTPMAPKK <-> pMAPKK + Raf1RasGTP-->
+    <Reaction name = "MAPKK+Raf1Ras--Raf1RasMAPKK" id="MAPKK+Raf1Ras--Raf1RasMAPKK">
+        <Reactant specieID="MEK"           />
+        <Reactant specieID="dRaf1Ras"              />
+        <Product  specieID="dRaf1RasMEK"               />
+
+        <forwardRate> 0.094286255e-3  </forwardRate>  <!--5x of nadias rates-->
+        <reverseRate> 2.4e-3  </reverseRate>
+      
+    </Reaction>
+    <Reaction name = "Raf1RasMAPKK--pMAPKK+Raf1Ras" id="Raf1RasMAPKK--pMAPKK+Raf1Ras">
+        <Reactant specieID="dRaf1RasMEK"           />
+        <Product  specieID="pMEK"               />
+        <Product  specieID="dRaf1Ras"               />
+
+        <forwardRate> 0.6e-3 </forwardRate>
+        <reverseRate> 0  </reverseRate>
+      
+    </Reaction>
+    
+    <!--(pMAPKK phos by Raf1RasGTP) pMAPKK + Raf1RasGTP <-> Raf1RasGTPMAPKK <-> ppMAPKK + Raf1RasGTP-->
+    
+    <Reaction name = "pMAPKK+Raf1Ras--Raf1RaspMAPKK" id="pMAPKK+Raf1Ras--Raf1RaspMAPKK">
+        <Reactant specieID="pMEK"           />
+        <Reactant specieID="dRaf1Ras"              />
+        <Product  specieID="dRaf1RaspMEK"               />
+
+      <forwardRate> 0.094286255e-3  </forwardRate>
+        <reverseRate> 2.4e-3  </reverseRate>
+      
+    </Reaction>
+    <Reaction name = "Raf1RaspMAPKK--ppMAPKK+Raf1Ras" id="Raf1RaspMAPKK--ppMAPKK+Raf1Ras">
+        <Reactant specieID="dRaf1RaspMEK"           />
+        <Product  specieID="ppMEK"               />
+        <Product  specieID="dRaf1Ras"               />
+
+        <forwardRate> 0.6e-3   </forwardRate>
+        <reverseRate> 0  </reverseRate>
+      
+    </Reaction>
+
+
+<!--(MAPKK phos by pRaf1RasGTP) MAPKK + pRaf1RasGTP <-> paf1RasGTPMAPKK <-> pMAPKK + pRaf1RasGTP-->
+    <Reaction name = "MAPKK+pRaf1Ras--pRaf1RasMAPKK" id="MAPKK+pRaf1Ras--pRaf1RasMAPKK">
+        <Reactant specieID="MEK"           />
+        <Reactant specieID="dpRaf1Ras"              />
+        <Product  specieID="dpRaf1RasMEK"               />
+
+        <forwardRate>  0.094286255e-3 </forwardRate>    <!--0.018857251e-3-->
+        <reverseRate> 2.4e-3  </reverseRate>
+      
+    </Reaction>
+    <Reaction name = "dpRaf1RasMAPKK--pMAPKK+dpRaf1Ras" id="dpRaf1RasMAPKK--pMAPKK+dpRaf1Ras">
+        <Reactant specieID="dpRaf1RasMEK"           />
+        <Product  specieID="pMEK"               />
+        <Product  specieID="dpRaf1Ras"               />
+
+        <forwardRate> 0.6e-3 </forwardRate>
+        <reverseRate> 0  </reverseRate>
+      
+    </Reaction>
+    
+    <!--(pMAPKK phos by Raf1RasGTP) pMAPKK + Raf1RasGTP <-> Raf1RasGTPMAPKK <-> ppMAPKK + Raf1RasGTP-->
+    
+    <Reaction name = "pMAPKK+pRaf1Ras--pRaf1RaspMAPKK" id="pMAPKK+pRaf1Ras--pRaf1RaspMAPKK">
+        <Reactant specieID="pMEK"           />
+        <Reactant specieID="dpRaf1Ras"              />
+        <Product  specieID="dpRaf1RaspMEK"               />
+
+      <forwardRate> 0.094286255e-3  </forwardRate>
+        <reverseRate> 2.4e-3  </reverseRate>
+      
+    </Reaction>
+    <Reaction name = "dpRaf1RaspMAPKK--ppMAPKK+dpRaf1Ras" id="dpRaf1RaspMAPKK--ppMAPKK+dpRaf1Ras">
+        <Reactant specieID="dpRaf1RaspMEK"           />
+        <Product  specieID="ppMEK"               />
+        <Product  specieID="dpRaf1Ras"               />
+
+        <forwardRate> 0.6e-3   </forwardRate>
+        <reverseRate> 0  </reverseRate>
+      
+    </Reaction>
+
+	 
+
+<!--MAPKK INACTIVATION BY PP2A-->
+    
+<!--(ppMAPKK dephos by PP2A) ppMAPKK+PP2A <-> ppMAPKKPP2A <-> pMAPKK+PP2A-->
+    <Reaction name = "ppMAPKK+PP2A--ppMAPKKPP2A" id="ppMAPKK+PP2A--ppMAPKKPP2A">
+        <Reactant specieID="ppMEK"           />
+        <Reactant specieID="PP2A"              />
+        <Product  specieID="ppMEKPP2A"               />
+                    
+
+        <forwardRate> 0.0019168e-3  </forwardRate>
+        <reverseRate> 24.000000e-3  </reverseRate>
+       
+    </Reaction>
+    <Reaction name = "ppMAPKKPP2A--pMAPKK+PP2A" id="ppMAPKKPP2A--pMAPKK+PP2A">
+        <Reactant specieID="ppMEKPP2A"           />
+        <Product  specieID="pMEK"               />
+        <Product  specieID="PP2A"               />
+
+        <forwardRate> 6e-3   </forwardRate>
+        <reverseRate> 0  </reverseRate>
+       
+    </Reaction>
+
+<!--(pMAPKK dephos by PP2A) pMAPKK+PP2A <-> pMAPKKPP2A <-> MAPKK+PP2A-->
+    <Reaction name = "pMAPKK+PP2A--pMAPKKPP2A" id="pMAPKK+PP2A--pMAPKKPP2A">
+        <Reactant specieID="pMEK"           />
+        <Reactant specieID="PP2A"              />
+        <Product  specieID="pMEKPP2A"               />
+
+       <forwardRate> 0.0019168e-3  </forwardRate>
+        <reverseRate> 24.000000e-3  </reverseRate>
+       
+    </Reaction>
+    <Reaction name = "pMAPKKPP2A--MAPKK+PP2A" id="pMAPKKPP2A--pMAPKK+PP2A">
+        <Reactant specieID="pMEKPP2A"           />
+        <Product  specieID="MEK"               />
+        <Product  specieID="PP2A"               />
+
+        <forwardRate> 6e-3   </forwardRate>
+        <reverseRate> 0  </reverseRate>
+       
+    </Reaction>
+
+
+   
+ 
+
+
+
+
+
+
+
+</ReactionScheme>
+
+
+
+
+
+
+
+
+
+
+
+

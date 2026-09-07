@@ -1,0 +1,183 @@
+
+ 
+<OutputScheme>
+
+  <!-- ===================== -->
+  <!-- FULL LIST: DEND -->
+  <!-- ===================== -->
+  <OutputSet filename="dend_full" region="dend" dt="100.0">
+
+
+
+
+
+
+
+
+    <OutputSpecie name="Ca"/>
+    <OutputSpecie name="Cabuff"/>
+    <OutputSpecie name="Cbuff"/>
+    <OutputSpecie name="Cbuffslow"/>
+
+  
+    <OutputSpecie name="Cam"/>
+    <OutputSpecie name="CamCa2C"/>
+    <OutputSpecie name="CamCa2N"/>
+    <OutputSpecie name="CamCa4"/>
+
+    <OutputSpecie name="CK"/>
+    <OutputSpecie name="CKp"/>
+    <OutputSpecie name="CKCamCa4"/>
+    <OutputSpecie name="CKpCamCa4"/>
+    <OutputSpecie name="CKpCamCa4SynGap"/>
+   
+
+    <OutputSpecie name="pmca"/>
+    <OutputSpecie name="pmcaCa"/>
+    <OutputSpecie name="ncx"/>
+    <OutputSpecie name="ncxCa"/>
+
+    <OutputSpecie name="CaOut"/>
+    <OutputSpecie name="CB"/>
+    <OutputSpecie name="CaB"/>
+    <OutputSpecie name="CaOutLeak"/>
+    <OutputSpecie name="Leak"/>
+
+    <OutputSpecie name="Calbin"/>
+    <OutputSpecie name="CalbinC"/>
+
+  </OutputSet>
+
+
+  <!-- ===================== -->
+  <!-- FULL LIST: NECK -->
+  <!-- (Same list as dend_full, but written to neck_full) -->
+  <!-- ===================== -->
+  <OutputSet filename="neck_full" region="neck" dt="100.0">
+
+
+    <!-- same species list as dend_full -->
+     <OutputSpecie name="Ca"/>
+    <OutputSpecie name="Cabuff"/>
+    <OutputSpecie name="Cbuff"/>
+    <OutputSpecie name="Cbuffslow"/>
+
+  
+    <OutputSpecie name="Cam"/>
+    <OutputSpecie name="CamCa2C"/>
+    <OutputSpecie name="CamCa2N"/>
+    <OutputSpecie name="CamCa4"/>
+
+    <OutputSpecie name="CK"/>
+    <OutputSpecie name="CKp"/>
+    <OutputSpecie name="CKCamCa4"/>
+    <OutputSpecie name="CKpCamCa4"/>
+    <OutputSpecie name="CKpCamCa4SynGap"/>
+   
+
+    <OutputSpecie name="pmca"/>
+    <OutputSpecie name="pmcaCa"/>
+    <OutputSpecie name="ncx"/>
+    <OutputSpecie name="ncxCa"/>
+
+    <OutputSpecie name="CaOut"/>
+    <OutputSpecie name="CB"/>
+    <OutputSpecie name="CaB"/>
+    <OutputSpecie name="CaOutLeak"/>
+    <OutputSpecie name="Leak"/>
+
+    <OutputSpecie name="Calbin"/>
+    <OutputSpecie name="CalbinC"/>
+
+  </OutputSet>
+
+
+  <!-- ===================== -->
+  <!-- FULL LIST: HEAD -->
+  <!-- ===================== -->
+  <OutputSet filename="head_full" region="head" dt="100.0">
+
+    <!-- same list as dend_full -->
+     <OutputSpecie name="Ca"/>
+    <OutputSpecie name="Cabuff"/>
+    <OutputSpecie name="Cbuff"/>
+    <OutputSpecie name="Cbuffslow"/>
+
+  
+    <OutputSpecie name="Cam"/>
+    <OutputSpecie name="CamCa2C"/>
+    <OutputSpecie name="CamCa2N"/>
+    <OutputSpecie name="CamCa4"/>
+
+    <OutputSpecie name="CK"/>
+    <OutputSpecie name="CKp"/>
+    <OutputSpecie name="CKCamCa4"/>
+    <OutputSpecie name="CKpCamCa4"/>
+    <OutputSpecie name="CKpCamCa4SynGap"/>
+   
+
+    <OutputSpecie name="pmca"/>
+    <OutputSpecie name="pmcaCa"/>
+    <OutputSpecie name="ncx"/>
+    <OutputSpecie name="ncxCa"/>
+
+    <OutputSpecie name="CaOut"/>
+    <OutputSpecie name="CB"/>
+    <OutputSpecie name="CaB"/>
+    <OutputSpecie name="CaOutLeak"/>
+    <OutputSpecie name="Leak"/>
+
+    <OutputSpecie name="Calbin"/>
+    <OutputSpecie name="CalbinC"/>
+
+  
+  </OutputSet>
+  
+
+
+  <!-- ===================== -->
+  <!-- FULL LIST: PSD -->
+  <!-- ===================== -->
+  <OutputSet filename="PSD_full" region="PSD" dt="100.0">
+
+    <!-- same list as dend_full -->
+     <OutputSpecie name="Ca"/>
+    <OutputSpecie name="Cabuff"/>
+    <OutputSpecie name="Cbuff"/>
+    <OutputSpecie name="Cbuffslow"/>
+
+  
+    <OutputSpecie name="Cam"/>
+    <OutputSpecie name="CamCa2C"/>
+    <OutputSpecie name="CamCa2N"/>
+    <OutputSpecie name="CamCa4"/>
+
+    <OutputSpecie name="CK"/>
+    <OutputSpecie name="CKp"/>
+    <OutputSpecie name="CKCamCa4"/>
+    <OutputSpecie name="CKpCamCa4"/>
+    <OutputSpecie name="CKpCamCa4SynGap"/>
+   
+
+    <OutputSpecie name="pmca"/>
+    <OutputSpecie name="pmcaCa"/>
+    <OutputSpecie name="ncx"/>
+    <OutputSpecie name="ncxCa"/>
+
+    <OutputSpecie name="CaOut"/>
+    <OutputSpecie name="CB"/>
+    <OutputSpecie name="CaB"/>
+    <OutputSpecie name="CaOutLeak"/>
+    <OutputSpecie name="Leak"/>
+
+    <OutputSpecie name="Calbin"/>
+    <OutputSpecie name="CalbinC"/>
+
+    
+  </OutputSet>
+
+
+ 
+
+</OutputScheme>
+
