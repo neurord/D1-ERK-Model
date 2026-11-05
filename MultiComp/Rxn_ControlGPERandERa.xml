@@ -26,7 +26,8 @@
     <Specie name="pPla2acAPC"            id="pPla2acAPC"           kdiff="0"    kdiffunit="mu2/s"/>
     <Specie name="pPla2ac"            id="pPla2ac"           kdiff="0"    kdiffunit="mu2/s"/>
     
-    
+    <Specie name="CaGRF" id="CaGRF"                             kdiff="0"    kdiffunit="mu2/s"/>
+	<Specie name="CaGRFRas" id="CaGRFRas"                 kdiff="0"    kdiffunit="mu2/s"/>
     <Specie name="ppERKPla2"            id="ppERKPla2"           kdiff="0"    kdiffunit="mu2/s"/>
     <Specie name="ppERKPla2ac"            id="ppERKPla2ac"           kdiff="0"    kdiffunit="mu2/s"/>
     
@@ -99,7 +100,7 @@
 	<Specie name="bRafRasMEK" id="bRafRasMEK"                       kdiff="0"    kdiffunit="mu2/s"/>
 	<Specie name="bRafRaspMEK" id="bRafRaspMEK"                     kdiff="0"    kdiffunit="mu2/s"/>
 	
-	<Specie name="SynGap"                              id="SynGap"                kdiff="0"     kdiffunit="mu2/s"/>
+	<Specie name="SynGap"                              id="SynGap"                kdiff="5"     kdiffunit="mu2/s"/>
 	<Specie name="pSynGap"                             id="pSynGap"               kdiff="5"     kdiffunit="mu2/s"/>
 	<Specie name="pSynden"                             id="pSynden"               kdiff="0"     kdiffunit="mu2/s"/>
 	
@@ -107,7 +108,7 @@
 	<Specie name="CKp"                                 id="CKp"                   kdiff="3.6"     kdiffunit="mu2/s"/>
 	<Specie name="CKpPP1"                              id="CKpPP1"                kdiff="0"     kdiffunit="mu2/s"/>
 	<Specie name="cAMP"           			   id="cAMP"          	      kdiff="86.4"  kdiffunit="mu2/s"/>
-	<Specie name="CamCa4"                              id="CamCa4"                kdiff="0"     kdiffunit="mu2/s"/>
+	<Specie name="CamCa4"                              id="CamCa4"                kdiff="11"     kdiffunit="mu2/s"/>
 	<Specie name="CKCamCa4"                            id="CKCamCa4"              kdiff="3.6"     kdiffunit="mu2/s"/>
 	<Specie name="CKpCamCa4"                           id="CKpCamCa4"             kdiff="3.6"     kdiffunit="mu2/s"/>	
 	<Specie name="CKpCamCa4SynGap"                     id="CKpCamCa4SynGap"       kdiff="0"     kdiffunit="mu2/s"/>
@@ -442,7 +443,7 @@
         <Reactant specieID="Dag"             />
         <Product  specieID="PkcDag"            />
 
-        <forwardRate> 0.06e-6    </forwardRate> <!--reducing by 10x, original 0.6e-6 -->
+        <forwardRate> 0.006e-6    </forwardRate> <!--reducing by 10x, original 0.6e-6 -->
         <reverseRate>  0.1e-3   </reverseRate> 
     </Reaction>
     
@@ -453,7 +454,7 @@
         <Reactant specieID="AA"             />
         <Product  specieID="PkcDagAA"            />
 
-        <forwardRate> 0.018e-3   </forwardRate>
+        <forwardRate>0.018e-4</forwardRate>
         <reverseRate>  2e-3   </reverseRate>
     </Reaction>
     
@@ -462,8 +463,8 @@
         <Reactant  specieID="Raf1"               />
         <Product  specieID="PkcDagAARaf1"               />
 
-        <forwardRate> 0.02e-1   </forwardRate>  <!--(Original 0.02e-3 Upi)-->
-	<reverseRate> 1.068e-3   </reverseRate>
+        <forwardRate> 0.02e-2   </forwardRate>  <!--(Original 0.02e-3 Upi)-->
+	<reverseRate> 0.001068   </reverseRate>
 		
     </Reaction>
 
@@ -472,7 +473,7 @@
         <Product  specieID="pRaf1"               />
         <Product  specieID="PkcDagAA"               />
 
-        <forwardRate>  0.267e-3  </forwardRate>
+        <forwardRate>  0.000267  </forwardRate>
 	<reverseRate> 0   </reverseRate>
 
   </Reaction>	
@@ -493,8 +494,8 @@
         <Reactant specieID="ERa"                      />
         <Product  specieID="E2ERa"                     />
 
-        <forwardRate> 1e-7 </forwardRate>   <!--Kuiper Kd=0.1nM-->
-        <reverseRate>  1e-8     </reverseRate> 
+        <forwardRate>1e-6</forwardRate>   <!--Kuiper Kd=0.1nM-->
+        <reverseRate>1e-7</reverseRate> 
     </Reaction>
 
 <!--1a. Glu or Glu agonist Dhpg: Glu + MgluR <==> GluMgluR
@@ -504,7 +505,7 @@
         <Reactant specieID="MgluR"              />
         <Product  specieID="E2ERaMgluR"         />
 
-        <forwardRate> 0.001e-03 </forwardRate> <!-- increased it 100x-->
+        <forwardRate>0.1e-03</forwardRate> <!-- increased it 100x-->
   <!--      <reverseRate> 13.2e-03      </reverseRate> -->
 	<!-- uncomment below and comment above for Glu (opposite for Dhpg) -->
         <reverseRate> 0.5e-03      </reverseRate>
@@ -567,8 +568,8 @@ The rxns added are PKC activation of Raf1,ppERK activating pla2 which in turn ac
         <Reactant  specieID="APC"               />
         <Product  specieID="Pla2acAPC"               />
 
-        <forwardRate> 0.001e-3  </forwardRate>
-	<reverseRate> 0.002   </reverseRate>
+        <forwardRate>0.001e-3</forwardRate>
+	<reverseRate>0.002</reverseRate>
 		
     </Reaction>
 
@@ -577,8 +578,8 @@ The rxns added are PKC activation of Raf1,ppERK activating pla2 which in turn ac
         <Product  specieID="AA"               />
         <Product  specieID="Pla2ac"               />
 
-        <forwardRate>  0.003e-1  </forwardRate>
-	<reverseRate> 0   </reverseRate>
+        <forwardRate>0.003e-1</forwardRate>
+	<reverseRate>0</reverseRate>
 		
     </Reaction>
     
@@ -591,8 +592,8 @@ The rxns added are PKC activation of Raf1,ppERK activating pla2 which in turn ac
         <Reactant  specieID="APC"               />
         <Product  specieID="pPla2acAPC"               />
 
-        <forwardRate> 0.001e-3   </forwardRate>
-	<reverseRate> 0.002   </reverseRate>
+        <forwardRate>0.001e-3</forwardRate>
+	<reverseRate>0.002</reverseRate>
 		
     </Reaction>
 
@@ -601,8 +602,8 @@ The rxns added are PKC activation of Raf1,ppERK activating pla2 which in turn ac
         <Product  specieID="AA"               />
         <Product  specieID="pPla2ac"               />
 
-        <forwardRate>  0.012e-1  </forwardRate>
-	<reverseRate> 0   </reverseRate>
+        <forwardRate>0.012e-1</forwardRate>
+	<reverseRate>0</reverseRate>
 		
     </Reaction>
     
@@ -653,7 +654,7 @@ MUCH slower binding compared to CaDgl  -->
         <Product  specieID="PkcCaDagAARaf1"               />
 
         <forwardRate> 0.02e-2   </forwardRate>  <!--(Original 0.02e-3,,,Last run 0.02e-2)-->
-	<reverseRate> 1.068e-3   </reverseRate>
+	<reverseRate> 0.001068   </reverseRate>
 		
     </Reaction>
 
@@ -662,7 +663,7 @@ MUCH slower binding compared to CaDgl  -->
         <Product  specieID="pRaf1"               />
         <Product  specieID="PkcCaDagAA"               />
 
-        <forwardRate>  0.267e-3  </forwardRate>
+        <forwardRate>  0.000267  </forwardRate>
 	<reverseRate> 0   </reverseRate>
 
   </Reaction>	
@@ -672,8 +673,8 @@ MUCH slower binding compared to CaDgl  -->
         <Reactant  specieID="Raf1"               />
         <Product  specieID="PkcCaDagRaf1"               />
 
-        <forwardRate> 0.02e-4   </forwardRate>  <!--(Original 0.02e-3,,,Last run 0.02e-4)-->
-	<reverseRate> 1.068e-3   </reverseRate>
+        <forwardRate> 2e-06   </forwardRate>  <!--(Original 0.02e-3,,,Last run 0.02e-4)-->
+	<reverseRate> 0.001068   </reverseRate>
 		
     </Reaction>
 
@@ -682,7 +683,7 @@ MUCH slower binding compared to CaDgl  -->
         <Product  specieID="pRaf1"               />
         <Product  specieID="PkcCaDag"               />
 
-        <forwardRate>  0.267e-3  </forwardRate>
+        <forwardRate>  0.000267  </forwardRate>
 	<reverseRate> 0   </reverseRate>
 
   </Reaction>	
@@ -700,7 +701,7 @@ MUCH slower binding compared to CaDgl  -->
         <Reactant specieID="pRaf1"               />
         <Product  specieID="PP2ApRaf1"               />
 
-        <forwardRate> 0.1475e-4  </forwardRate> <!--  was upi but this is gallimore -->
+        <forwardRate> 1.475e-05  </forwardRate> <!--  was upi but this is gallimore -->
 	<reverseRate> 1.86e-3   </reverseRate> <!---->
   </Reaction>	
 
@@ -779,7 +780,7 @@ MUCH slower binding compared to CaDgl  -->
         <Reactant  specieID="pRaf1"               />
         <Product  specieID="pRaf1Ras"               />
 
-        <forwardRate> 0.6e-3   </forwardRate>	<!--Upis Rates are kf= 60,Kb=0.5//My tweaked rates are Kf=1e-3 and Kb=5e-3-->
+        <forwardRate>0.006</forwardRate>	<!--Upis Rates are kf= 60,Kb=0.5//My tweaked rates are Kf=1e-3 and Kb=5e-3-->
 	<reverseRate> 0.5e-3   </reverseRate>    
 	
     </Reaction>
@@ -794,7 +795,7 @@ MUCH slower binding compared to CaDgl  -->
    <Reaction name = "AA -> " id = "AA -> NULL">
     	<Reactant specieID="AA"		/>
 	<Product specieID="APC"/>
-	<forwardRate> 0.4e-5 </forwardRate>  <!-- 0.4e-6 last run value,still reducing slightly-->
+	<forwardRate> 0.3e-5 </forwardRate>  <!-- 3600 s PKC tuning: best tested balance of AA mean and variability. -->
 	<reverseRate>0</reverseRate>
 	
     </Reaction>
@@ -835,7 +836,7 @@ MUCH slower binding compared to CaDgl  -->
         <Reactant specieID="pRaf1Ras"      n="2"     />
         <Product  specieID="dpRaf1Ras"               />
 
-        <forwardRate> 0.02e-3   </forwardRate> <!-- pRaf1Ras dimer same rate of formation as raf1ras dimer,previously i did use 10x dimer-->
+        <forwardRate> 0.02e-3   </forwardRate> <!-- Matched corresponding Raf1Ras pathway rate. -->
 	<reverseRate> 0.5e-3   </reverseRate>
 	
       </Reaction>
@@ -1175,7 +1176,7 @@ MUCH slower binding compared to CaDgl  -->
         <Reactant specieID="dpRaf1Ras"              />
         <Product  specieID="dpRaf1RasMEK"               />
 
-        <forwardRate>  0.094286255e-3 </forwardRate>    <!--0.018857251e-3-->
+        <forwardRate>  0.094286255e-3 </forwardRate>    <!-- Matched corresponding Raf1Ras pathway rate. -->
         <reverseRate> 2.4e-3  </reverseRate>
       
     </Reaction>
@@ -1386,7 +1387,7 @@ MUCH slower binding compared to CaDgl  -->
 	      <Product specieID="Cabuff"/>
 
         <forwardRate> 0.1e-3 </forwardRate>
-	<reverseRate> 0 </reverseRate>
+	<reverseRate>0.01e-3</reverseRate>
 </Reaction>
     
     
@@ -1553,38 +1554,41 @@ MUCH slower binding compared to CaDgl  -->
 
 
 
-    <!--(activaton of RasGRF) CamCa4+RasGRF->CamCa4RasGRF -->
-    <Reaction name = "CamCa4+RasGRF--CamCa4GRF" id="CamCa4+RasGRF--CamCa4GRF">
-        <Reactant specieID="CamCa4"           />
+    <!-- Optimised the following 3 rxns using Yasuda super sensitive does response curve-->
+      <!--(activaton of RasGRF) CamCa4+RasGRF->CamCa4RasGRF -->
+    <Reaction name = "Ca+RasGRF--CaGRF" id="Ca+RasGRF--CaGRF">
+        <Reactant specieID="Ca"   power="3"        />
         <Reactant specieID="RasGRF"              />
-	<Product  specieID="CamCa4GRF"               />
+	<Product  specieID="CaGRF"               />
 
-        <forwardRate> 0.06e-3  </forwardRate>
-        <reverseRate> 0.924e-3 </reverseRate>
+        <forwardRate> 3.613763401996194e-08  </forwardRate>
+        <reverseRate> 368.3160657318737 </reverseRate>
         
     </Reaction>
 
 <!--(active RasGRF activates Ras)CamCa4GRF +RasGDP <-> CamCa4GRFRasGDP <-> CamCa4GRF + RasGTP-->
-    <Reaction name = "CamCa4GRF+RasGDP--CamCa4GRFRasGDP" id="CamCa4GRF+RasGDP--CamCa4GRFRasGDP">
-        <Reactant specieID="CamCa4GRF"           />
+    
+    <Reaction name = "CaGRF+RasGDP--CaGRFRasGDP" id="CaGRF+RasGDP--CaGRFRasGDP">
+        <Reactant specieID="CaGRF"           />
         <Reactant specieID="RasGDP"              />
-        <Product  specieID="CamCa4GRFRas"               />
+        <Product  specieID="CaGRFRas"               />
 
-        <forwardRate> 0.0019e-3  </forwardRate>
-        <reverseRate> 0.08e-3 </reverseRate>
+        <forwardRate> 0.0010438725346024445  </forwardRate>
+        <reverseRate> 0.2250245864335561 </reverseRate>
         
         
     </Reaction>
 
-    <Reaction name = "CamCa4GRFRasGDP--CamCa4GRF+RasGTP" id="CamCa4GRFRasGDP--CamCa4GRF+RasGTP">
-        <Reactant specieID="CamCa4GRFRas"               />
-        <Product specieID="CamCa4GRF"             />
+    <Reaction name = "CaGRFRasGDP--CaGRF+RasGTP" id="CaGRFRasGDP--CaGRF+RasGTP">
+        
+        <Reactant specieID="CaGRFRas"               />
+        <Product specieID="CaGRF"             />
         <Product specieID="RasGTP"               />
 
-        <forwardRate> 0.02e-3  </forwardRate> 
+        <forwardRate> 0.05813962309144008  </forwardRate> 
         <reverseRate> 0 </reverseRate>
        
-</Reaction>
+    </Reaction>
 
   
    
@@ -2769,7 +2773,7 @@ MUCH slower binding compared to CaDgl  -->
         <Reactant specieID="PlcCa"              />
         <Product  specieID="PlcCaGqa"               />
 
-        <forwardRate> 0.004375e-03   </forwardRate>
+        <forwardRate>0.4375e-03</forwardRate>
         <reverseRate> 0.7e-03        </reverseRate>
     </Reaction>
 
@@ -2780,7 +2784,7 @@ MUCH slower binding compared to CaDgl  -->
         <Reactant specieID="Plc"              />
         <Product  specieID="PlcGqa"               />
 
-        <forwardRate> 0.0007e-03   </forwardRate>
+        <forwardRate>0.07e-03</forwardRate>
         <reverseRate> 0.7e-03        </reverseRate>
     </Reaction>
 
@@ -2790,7 +2794,7 @@ MUCH slower binding compared to CaDgl  -->
         <Reactant specieID="PlcGqa"              />
         <Product  specieID="PlcCaGqa"               />
 
-        <forwardRate> 0.0025e-03   </forwardRate>
+        <forwardRate>0.025e-03</forwardRate>
         <reverseRate> 1.0e-03        </reverseRate>
     </Reaction>
 
@@ -2833,7 +2837,7 @@ MUCH slower binding compared to CaDgl  -->
         <Product  specieID="Dag"            />
         <Product  specieID="Ip3"            />
 
-        <forwardRate> 30e-03     </forwardRate>
+        <forwardRate>3e-03</forwardRate>
         <reverseRate> 0e-03    </reverseRate>
     </Reaction>
       
@@ -2897,7 +2901,7 @@ MUCH slower binding compared to CaDgl  -->
          <Reactant specieID="Ip3"            />
         <Product  specieID="Ip3degrad"        />
 
-        <forwardRate> 0.1e-03      </forwardRate>
+        <forwardRate> 0.00015480048483157096      </forwardRate>
         <reverseRate> 0.0e-03      </reverseRate>
     </Reaction>
 
@@ -3059,7 +3063,7 @@ MUCH slower binding compared to CaDgl  -->
         <Product  specieID="Dag"            />
         <Product  specieID="Ip3"            />
 
-        <forwardRate> 30e-03     </forwardRate>
+        <forwardRate>3e-03</forwardRate>
         <reverseRate> 0e-03    </reverseRate>
     </Reaction>
 	
@@ -3080,7 +3084,7 @@ MUCH slower binding compared to CaDgl  -->
         <Reactant specieID="PlcGbg"              />
         <Product  specieID="PlcCaGbg"               />
 
-        <forwardRate> 0.0025e-03   </forwardRate>
+        <forwardRate>0.025e-03</forwardRate>
         <reverseRate> 1.0e-03        </reverseRate>
     </Reaction>
     
@@ -3092,7 +3096,7 @@ MUCH slower binding compared to CaDgl  -->
         <Reactant specieID="PlcGbg"              />
         <Product  specieID="PlcGqaGbg"               />
 
-        <forwardRate> 0.005e-02   </forwardRate>    <!-- 20x for synergy -->
+        <forwardRate>0.025</forwardRate>    <!-- 20x for synergy -->
         <reverseRate> 1.0e-03        </reverseRate>
     </Reaction>
       
@@ -3102,7 +3106,7 @@ MUCH slower binding compared to CaDgl  -->
         <Reactant specieID="PlcGqa"              />
         <Product  specieID="PlcGqaGbg"               />
 
-        <forwardRate> 0.005e-02   </forwardRate>   <!--10x for synergy -->
+        <forwardRate>0.025</forwardRate>   <!--10x for synergy -->
         <reverseRate> 1.0e-03        </reverseRate>
     </Reaction>
       
@@ -3113,7 +3117,7 @@ MUCH slower binding compared to CaDgl  -->
         <Reactant specieID="PlcCaGbg"              />
         <Product  specieID="PlcCaGqaGbg"               />
 
-        <forwardRate> 0.005e-02  </forwardRate>  <!--10x for synergy -->
+        <forwardRate>0.025</forwardRate>  <!--10x for synergy -->
         <reverseRate> 1.0e-03        </reverseRate>
     </Reaction>
       
@@ -3124,7 +3128,7 @@ MUCH slower binding compared to CaDgl  -->
         <Reactant specieID="PlcCaGqa"              />
         <Product  specieID="PlcCaGqaGbg"               />
 
-        <forwardRate> 0.005e-02   </forwardRate>  <!--10x for synergy -->
+        <forwardRate>0.025</forwardRate>  <!--10x for synergy -->
         <reverseRate> 1.0e-03        </reverseRate>
     </Reaction>
       
@@ -3135,7 +3139,7 @@ MUCH slower binding compared to CaDgl  -->
         <Reactant specieID="PlcGqaGbg"              />
         <Product  specieID="PlcCaGqaGbg"               />
 
-        <forwardRate> 0.005e-02   </forwardRate>       <!--10x for synergy -->
+        <forwardRate>0.025e-03</forwardRate>       <!--10x for synergy -->
         <reverseRate> 1.0e-03        </reverseRate>
     </Reaction>
     
@@ -3158,7 +3162,7 @@ MUCH slower binding compared to CaDgl  -->
         <Product  specieID="Dag"            />
         <Product  specieID="Ip3"            />
 
-        <forwardRate> 300e-03     </forwardRate>     <!--10x for synergy-->
+        <forwardRate>30e-03</forwardRate>     <!--10x for synergy-->
         <reverseRate> 0e-03    </reverseRate>
     </Reaction>
       
@@ -3180,7 +3184,7 @@ MUCH slower binding compared to CaDgl  -->
         <Product  specieID="Dag"            />
         <Product  specieID="Ip3"            />
 
-        <forwardRate> 300e-03     </forwardRate>              <!--10x for synergy-->
+        <forwardRate>30e-03</forwardRate>              <!--10x for synergy-->
         <reverseRate> 0e-03    </reverseRate>
     </Reaction>
       
@@ -3188,90 +3192,30 @@ MUCH slower binding compared to CaDgl  -->
     
     
 	<!--3i. PlcCa + Pip2    <-> PlcCaPip2    Possibly make these two 3x-5x faster-->
-    <Reaction name = "PlcCa+Pip2--PlcCaPip2" id="PlcCa+Pip2--PlcCaPip2">
-        <Reactant specieID="PlcCa"               />
-        <Reactant specieID="Pip2"             />
-        <Product  specieID="PlcCaPip2"            />
-
-        <forwardRate> 0.03e-06   </forwardRate>
-        <reverseRate> 1.2e-03   </reverseRate>
-    </Reaction>
+    
 
     <!--4i. PlcCaPip2      <-> PlcCaDag + Ip3 -->
-    <Reaction name = "PlcCaPip2--PlcCa+Dag+Ip3" id="PlcCaPip2--PlcCa+Dag+Ip3">
-        <Reactant specieID="PlcCaPip2"            />
-        <Product  specieID="PlcCa"               />
-        <Product  specieID="Ip3"            />
-        <Product  specieID="Dag"            />
-
-        <forwardRate> 0.3e-03     </forwardRate>
-        <reverseRate> 0e-03    </reverseRate>
-    </Reaction>
+    
       
     <!--3j. PlcCaGqa + Pip2    <-> PlcCaGqaPip2   Possibly make these two 3x-5x faster -->
-    <Reaction name = "PlcCaGqa+Pip2--PlcCaGqaPip2" id="PlcCaGqa+Pip2--PlcCaGqaPip2">
-        <Reactant specieID="PlcCaGqa"               />
-        <Reactant specieID="Pip2"             />
-        <Product  specieID="PlcCaGqaPip2"            />
-
-        <forwardRate>  1.665e-06   </forwardRate>
-        <reverseRate>  60e-03   </reverseRate>
-    </Reaction>
+    
       
     <!--4j. PlcCaGqaPip2       <-> PlcCaGqaDag + Ip3 -->
-    <Reaction name = "PlcCaGqaPip2--PlcCaGqaDag+Ip3" id="PlcCaGqaPip2--PlcCaGqaDag+Ip3">
-        <Reactant specieID="PlcCaGqaPip2"            />
-        <Product  specieID="PlcCaGqa"               />
-        <Product  specieID="Dag"            />
-        <Product  specieID="Ip3"            />
-
-        <forwardRate> 30e-03     </forwardRate>
-        <reverseRate> 0e-03    </reverseRate>
-    </Reaction>
+    
     
     
         <!--3j. PlcCaGqa + Pip2    <-> PlcCaGqaPip2   Possibly make these two 3x-5x faster -->
-    <Reaction name = "PlcCaGqa+Pip2--PlcCaGqaPip2" id="PlcCaGqa+Pip2--PlcCaGqaPip2">
-        <Reactant specieID="PlcGqa"               />
-        <Reactant specieID="Pip2"             />
-        <Product  specieID="PlcGqaPip2"            />		<!--Testing only a gq dependent form of plc-->
-
-        <forwardRate>  1.665e-06   </forwardRate>
-        <reverseRate>  60e-03   </reverseRate>
-    </Reaction>
+    
     
     <!--4j. PlcCaGqaPip2       <-> PlcCaGqaDag + Ip3 -->
-    <Reaction name = "PlcCaGqaPip2--PlcCaGqaDag+Ip3" id="PlcCaGqaPip2--PlcCaGqaDag+Ip3">
-        <Reactant specieID="PlcGqaPip2"            />
-        <Product  specieID="PlcGqa"               />
-        <Product  specieID="Dag"            />
-        <Product  specieID="Ip3"            />
-
-        <forwardRate> 0.3e-03     </forwardRate>
-        <reverseRate> 0e-03    </reverseRate>
-    </Reaction>
+    
 
 	
       <!--3j. PlcCaGqa + Pip2    <-> PlcCaGqaPip2   Possibly make these two 3x-5x faster -->
-    <Reaction name = "PlcCaGbg+Pip2--PlcCaGqaPip2" id="PlcCaGqa+Pip2--PlcCaGqaPip2">
-        <Reactant specieID="PlcCaGbg"               />
-        <Reactant specieID="Pip2"             />
-        <Product  specieID="PlcCaGbgPip2"            />
-
-        <forwardRate>  1.665e-06   </forwardRate>
-        <reverseRate>  60e-03   </reverseRate>
-    </Reaction>
+    
       
     <!--4j. PlcCaGqaPip2       <-> PlcCaGqaDag + Ip3 -->
-    <Reaction name = "PlcCaGqaPip2--PlcCaGqaDag+Ip3" id="PlcCaGqaPip2--PlcCaGqaDag+Ip3">
-        <Reactant specieID="PlcCaGbgPip2"            />
-        <Product  specieID="PlcCaGbg"               />
-        <Product  specieID="Dag"            />
-        <Product  specieID="Ip3"            />
-
-        <forwardRate> 30e-03     </forwardRate>
-        <reverseRate> 0e-03    </reverseRate>
-    </Reaction>               
+                   
       
       
       
@@ -3279,46 +3223,16 @@ MUCH slower binding compared to CaDgl  -->
       
   
       <!--3j. PlcCaGqa + Pip2    <-> PlcCaGqaPip2   Possibly make these two 3x-5x faster -->
-    <Reaction name = "PlcCaGqa+Pip2--PlcCaGqaPip2" id="PlcCaGqa+Pip2--PlcCaGqaPip2">
-        <Reactant specieID="PlcGbg"               />
-        <Reactant specieID="Pip2"             />
-        <Product  specieID="PlcGbgPip2"            />		<!--Testing only a gq dependent form of plc-->
-
-        <forwardRate>  1.665e-06   </forwardRate>
-        <reverseRate>  60e-03   </reverseRate>
-    </Reaction>
+    
     
     <!--4j. PlcCaGqaPip2       <-> PlcCaGqaDag + Ip3 -->
-    <Reaction name = "PlcCaGqaPip2--PlcCaGqaDag+Ip3" id="PlcCaGqaPip2--PlcCaGqaDag+Ip3">
-        <Reactant specieID="PlcGbgPip2"            />
-        <Product  specieID="PlcGbg"               />
-        <Product  specieID="Dag"  />
-        <Product  specieID="Ip3"            />
-
-        <forwardRate> 30e-03     </forwardRate>
-        <reverseRate> 0e-03    </reverseRate>
-    </Reaction>
+    
                 />
       <!--3j. PlcCaGqa + Pip2    <-> PlcCaGqaPip2   Possibly make these two 3x-5x faster -->
-    <Reaction name = "PlcCaGbg+Pip2--PlcCaGqaPip2" id="PlcCaGqa+Pip2--PlcCaGqaPip2">
-        <Reactant specieID="PlcCaGbg"               />
-        <Reactant specieID="Pip2"             />
-        <Product  specieID="PlcCaGbgPip2"            />
-
-        <forwardRate>  1.665e-06   </forwardRate>
-        <reverseRate>  60e-03   </reverseRate>
-    </Reaction>
+    
       
     <!--4j. PlcCaGqaPip2       <-> PlcCaGqaDag + Ip3 -->
-    <Reaction name = "PlcCaGqaPip2--PlcCaGqaDag+Ip3" id="PlcCaGqaPip2--PlcCaGqaDag+Ip3">
-        <Reactant specieID="PlcCaGbgPip2"            />
-        <Product  specieID="PlcCaGbg"               />
-        <Product  specieID="Dag"            />
-        <Product  specieID="Ip3"            />
-
-        <forwardRate> 30e-03     </forwardRate>
-        <reverseRate> 0e-03    </reverseRate>
-    </Reaction>
+    
       
          
       
@@ -3553,6 +3467,55 @@ MUCH slower binding compared to CaDgl  -->
 
 
 
+
+
+    <!-- PLC reactions aligned with Rxn_ControlERafinal.xml. -->
+    <Reaction name = "PlcCa+GqaGTP--PlcCaGqa" id="PlcCa+GqaGTP--PlcCaGqa">
+        <Reactant specieID="Gbg"           />  
+        <Reactant specieID="PlcCa"              />
+        <Product  specieID="PlcCaGbg"               />
+
+        <forwardRate> 0.004375e-03   </forwardRate> <!-- 100x slower for gbg than gq-->
+        <reverseRate> 0.7e-03        </reverseRate>
+    </Reaction>
+
+    <Reaction name = "PlcGqa--Plc+GqaGDP" id="PlcGqa--Plc+GqaGDP">
+        <Reactant specieID="PlcGqaGbg"            />
+        <Product  specieID="Plc"               />
+        <Product  specieID="Gbg"            />
+	<Product  specieID="GqaGDP"            />
+	
+        <forwardRate>   12e-03   </forwardRate>
+        <reverseRate>   0  </reverseRate>
+    </Reaction>
+
+    <Reaction name = "PlcCaGqa--PlcCa+GaGDP" id="PlcCaGqa--Plc+GaGDP">
+        <Reactant specieID="PlcCaGqaGbg"            />
+        <Product  specieID="PlcCa"               />
+        <Product  specieID="Gbg"            />
+	<Product  specieID="GqaGDP"            />
+
+        <forwardRate>   12e-03   </forwardRate>
+        <reverseRate>   0  </reverseRate>
+    </Reaction>
+
+    <Reaction name = "PlcGqa--Plc+GqaGDP" id="PlcGqa--Plc+GqaGDP">
+        <Reactant specieID="PlcGbg"            />
+        <Product  specieID="Plc"               />
+        <Product  specieID="Gbg"            />
+
+        <forwardRate>   12e-03   </forwardRate>
+        <reverseRate>   0  </reverseRate>
+    </Reaction>
+
+    <Reaction name = "PlcCaGqa--PlcCa+GaGDP" id="PlcCaGqa--Plc+GaGDP">
+        <Reactant specieID="PlcCaGbg"            />
+        <Product  specieID="PlcCa"               />
+        <Product  specieID="Gbg"            />
+
+        <forwardRate>   12e-03   </forwardRate>
+        <reverseRate>   0  </reverseRate>
+    </Reaction>
 
 </ReactionScheme>
 

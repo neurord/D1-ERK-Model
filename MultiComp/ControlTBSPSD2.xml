@@ -7,7 +7,7 @@
           <xi:include href="Morph.xml" />
 	  <xi:include href="IC_StriatalERKbasalnoE2.xml" />       
           <xi:include href="Out_StriatalERK.xml" />
-	  <xi:include href="StimTBSmini.xml" />
+	  <xi:include href="StimTBS2.xml" />
 	    
     <!--2D means the morphology is interpreted like a flatworm, 3D for
 	roundworms. The 2D case is good for testing as it is eas/Stry to visualize the
@@ -22,7 +22,7 @@ results (also, 3D may not work yet...)  -->
 
     <!-- run time for the calculation, milliseconds -->
     
-    <runtime>          55000         </runtime>
+    <runtime>          200000         </runtime>
 <!-- 100001 -->
     <!-- set the seed to get the same spines each time testing -->
     <spineSeed>          123          </spineSeed>

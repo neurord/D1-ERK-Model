@@ -1,10 +1,10 @@
 <StimulationSet>
 
-<!--  Ca pulses TRAIN 1:  40 Ca pulses -->
+
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>               500000          </onset>
         <duration>            3              </duration>
-        <rate>                160            </rate>
+        <rate>                85            </rate>
         <period>              20             </period>
         <end>                 500066          </end>
         <numTrains>           10             </numTrains>
@@ -14,7 +14,7 @@
 <InjectionStim specieID="Ca" injectionSite="dend:submembrane">
         <onset>               500000          </onset>
         <duration>            3              </duration>
-        <rate>                200            </rate>
+        <rate>                185            </rate>
         <period>              20             </period>
         <end>                 500066          </end>
         <numTrains>           10             </numTrains>
@@ -26,7 +26,7 @@
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>               515000          </onset>
         <duration>            3              </duration>
-        <rate>                160            </rate>
+        <rate>                85            </rate>
         <period>              20             </period>
         <end>                 515066          </end>
         <numTrains>           10             </numTrains>
@@ -35,7 +35,7 @@
 <InjectionStim specieID="Ca" injectionSite="dend:submembrane">
         <onset>               515000          </onset>
         <duration>            3              </duration>
-        <rate>                200            </rate>
+        <rate>                185            </rate>
         <period>              20             </period>
         <end>                 515066          </end>
         <numTrains>           10             </numTrains>
@@ -45,7 +45,7 @@
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>               530000          </onset>
         <duration>            3              </duration>
-        <rate>                160            </rate>
+        <rate>                85            </rate>
         <period>              20             </period>
         <end>                 530066          </end>
         <numTrains>           10             </numTrains>
@@ -54,7 +54,7 @@
 <InjectionStim specieID="Ca" injectionSite="dend:submembrane">
         <onset>               530000          </onset>
         <duration>            3              </duration>
-        <rate>                200            </rate>
+        <rate>                185            </rate>
         <period>              20             </period>
         <end>                 530066          </end>
         <numTrains>           10             </numTrains>
@@ -65,7 +65,7 @@
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>               545000          </onset>
         <duration>            3              </duration>
-        <rate>                160            </rate>
+        <rate>                85            </rate>
         <period>              20             </period>
         <end>                 545066          </end>
         <numTrains>           10             </numTrains>
@@ -74,7 +74,7 @@
 <InjectionStim specieID="Ca" injectionSite="dend:submembrane">
         <onset>               545000          </onset>
         <duration>            3              </duration>
-        <rate>                200            </rate>
+        <rate>                185            </rate>
         <period>              20             </period>
         <end>                 545066          </end>
         <numTrains>           10             </numTrains>
@@ -84,7 +84,7 @@
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>               560000          </onset>
         <duration>            3              </duration>
-        <rate>                160            </rate>
+        <rate>                85            </rate>
         <period>              20             </period>
         <end>                 560066          </end>
         <numTrains>           10             </numTrains>
@@ -93,7 +93,7 @@
 <InjectionStim specieID="Ca" injectionSite="dend:submembrane">
         <onset>               560000          </onset>
         <duration>            3              </duration>
-        <rate>                200            </rate>
+        <rate>                185            </rate>
         <period>              20             </period>
         <end>                 560066          </end>
         <numTrains>           10             </numTrains>
@@ -105,7 +105,7 @@
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>               575000          </onset>
         <duration>            3              </duration>
-        <rate>                160            </rate>
+        <rate>                85            </rate>
         <period>              20             </period>
         <end>                 575066          </end>
         <numTrains>           10             </numTrains>
@@ -114,7 +114,7 @@
 <InjectionStim specieID="Ca" injectionSite="dend:submembrane">
         <onset>               575000          </onset>
         <duration>            3              </duration>
-        <rate>                200            </rate>
+        <rate>                185            </rate>
         <period>              20             </period>
         <end>                 575066          </end>
         <numTrains>           10             </numTrains>
@@ -124,7 +124,7 @@
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>               590000          </onset>
         <duration>            3              </duration>
-        <rate>                160            </rate>
+        <rate>                85            </rate>
         <period>              20             </period>
         <end>                 590066          </end>
         <numTrains>           10             </numTrains>
@@ -133,7 +133,7 @@
 <InjectionStim specieID="Ca" injectionSite="dend:submembrane">
         <onset>               590000          </onset>
         <duration>            3              </duration>
-        <rate>                200            </rate>
+        <rate>                185            </rate>
         <period>              20             </period>
         <end>                 590066          </end>
         <numTrains>           10             </numTrains>
@@ -144,7 +144,7 @@
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>               605000          </onset>
         <duration>            3              </duration>
-        <rate>                160            </rate>
+        <rate>                85            </rate>
         <period>              20             </period>
         <end>                 605066          </end>
         <numTrains>           10             </numTrains>
@@ -153,7 +153,7 @@
 <InjectionStim specieID="Ca" injectionSite="dend:submembrane">
         <onset>               605000          </onset>
         <duration>            3              </duration>
-        <rate>                200            </rate>
+        <rate>                185            </rate>
         <period>              20             </period>
         <end>                 605066          </end>
         <numTrains>           10             </numTrains>
@@ -163,7 +163,7 @@
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>               620000          </onset>
         <duration>            3              </duration>
-        <rate>                160            </rate>
+        <rate>                85            </rate>
         <period>              20             </period>
         <end>                 620066          </end>
         <numTrains>           10             </numTrains>
@@ -172,7 +172,7 @@
 <InjectionStim specieID="Ca" injectionSite="dend:submembrane">
         <onset>               620000          </onset>
         <duration>            3              </duration>
-        <rate>                200            </rate>
+        <rate>                165            </rate>
         <period>              20             </period>
         <end>                 620066          </end>
         <numTrains>           10             </numTrains>
@@ -183,7 +183,7 @@
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
         <onset>               635000          </onset>
         <duration>            3              </duration>
-        <rate>                160            </rate>
+        <rate>                85            </rate>
         <period>              20             </period>
         <end>                 635066          </end>
         <numTrains>           10             </numTrains>
@@ -192,7 +192,7 @@
 <InjectionStim specieID="Ca" injectionSite="dend:submembrane">
         <onset>               635000          </onset>
         <duration>            3              </duration>
-        <rate>                200            </rate>
+        <rate>                165            </rate>
         <period>              20             </period>
         <end>                 635066          </end>
         <numTrains>           10             </numTrains>
@@ -206,54 +206,54 @@
 
 
   
-  
-<InjectionStim specieID="DaDbuf" injectionSite="sa1[0].pointA">
+ <InjectionStim specieID="DaDbuf" injectionSite="sa1[0].pointA">
         <onset>               500000          </onset>
         <duration>            60              </duration>
-        <rate>                9.0           </rate>
+        <rate>                1.69839           </rate>
         <period>              105             </period>
         <end>                 500100          </end>
   </InjectionStim>
 
-  <!-- These next Da are single pulse, represent 4 pulse burst; burst 2-10 amp = 1/2 amp of 1st burst -->
-  <!-- the 15 s repetition of train provides bursts 2-10 for each of 10 trains -->
+  
+  
   <InjectionStim specieID="DaDbuf" injectionSite="sa1[0].pointA">
         <onset>               500095          </onset>
         <duration>            60              </duration>
-        <rate>                3.5           </rate>
+        <rate>                0.65766           </rate>
         <period>              95             </period>
         <end>                 500949          </end>
   </InjectionStim>
   
-  <!-- bursts 2-10 are lower amplitude than 1st burst -->
+  
   <InjectionStim specieID="DaDbuf" injectionSite="sa1[0].pointA">
         <onset>               515000          </onset>
         <duration>            60              </duration>
-        <rate>                4.0           </rate>
+        <rate>                0.62795           </rate>
         <period>              105             </period>
         <end>                 515100          </end>
         <numTrains>           9             </numTrains>
         <interTrainInterval>  14900             </interTrainInterval>    
   </InjectionStim>
 
-  <!-- These next Da are single pulse, represent 4 pulse burst; burst 2-10 amp = 1/2 amp of 1st burst -->
-  <!-- the 15 s repetition of train provides bursts 2-10 for each of 10 trains -->
+  
+  
   <InjectionStim specieID="DaDbuf" injectionSite="sa1[0].pointA">
         <onset>               515095          </onset>
         <duration>            60              </duration>
-        <rate>                2           </rate>
+        <rate>                0.31445           </rate>
         <period>              95             </period>
         <end>                 515949          </end>
         <numTrains>           9             </numTrains>
         <interTrainInterval>  14051             </interTrainInterval>    
   </InjectionStim>
 
+
  
 
 
 
 
-  <!-- *****************TRAIN 1 *** Glu inject ********** -->
+  
   <InjectionStim specieID="GluGbuf" injectionSite="sa1[0].pointA">
         <onset>               500000          </onset>
         <duration>            5              </duration>
@@ -369,12 +369,3 @@
 
 
 </StimulationSet>
-  
-
-
-
-  
-
-
-
-
