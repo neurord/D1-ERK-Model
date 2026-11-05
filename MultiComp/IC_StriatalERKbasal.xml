@@ -28,9 +28,9 @@
     
     
     
-    <NanoMolarity specieID="STEP" value="236.2223" />
+    <NanoMolarity specieID="STEP" value="836.2223" />
     <NanoMolarity specieID="STEPp" value="22.6089" />
-    <NanoMolarity specieID="MKP1" value="29.0984" />
+    <NanoMolarity specieID="MKP1" value="0.0984" />
     <NanoMolarity specieID="pERKMKP1" value="6.126" />
     <NanoMolarity specieID="ppERKMKP1" value="4.8438" />
     
@@ -99,9 +99,11 @@
     <NanoMolarity specieID="2agDegrad" value="60868.8552" />
     <NanoMolarity specieID="2ag" value="47.601" />
 
-    <NanoMolarity specieID="Pkc" value="732.607" />
-    <NanoMolarity specieID="PkcCa" value="12.1985" />
-    <NanoMolarity specieID="PkcCaDag" value="0.0" />
+    
+    <!-- where did PKC quantity of 15 uM (from BoHung Paper) come from ???-->
+    <NanoMolarity specieID="Pkc"         value="1975"     />  
+    <NanoMolarity specieID="PkcCa"         value="25"     />  
+    <NanoMolarity specieID="PkcCaDag"         value="0"     />  
 
     <NanoMolarity specieID="PP2B" value="0.298" />
     <NanoMolarity specieID="PP2BCam" value="3636.0264" />
